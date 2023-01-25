@@ -6,7 +6,7 @@ import Experiences from "./Experiences.js";
 
 function Main() {
   return (
-    <Container fluid>
+      <Container fluid className="p-0">
         <Row style={{ justifyContent: "center", paddingBottom: "100px" }}>
         <Col md={12}>
             <img className="MainImg" alt="mainImg" src="img/sample.png"></img>            
