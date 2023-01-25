@@ -2,14 +2,22 @@
 
 
 설치 된 모듈
+
 react-router-dom
+
 react-bootstrap
+
 bootstrap
 ****
 
+진행상황 23-01-25
+
+![React App](https://user-images.githubusercontent.com/88936783/214492273-ef440bc0-6ebb-4679-8402-b142c1b46e70.png)
 
 
-진행상황 23-01-24
+
+****
+23-01-24
 
 ![스크린샷 2023-01-24 오후 9 42 35](https://user-images.githubusercontent.com/88936783/214294544-19857f1e-25a4-49db-a057-cceef6185f1d.png)
 

@@ -29,8 +29,35 @@
   overflow: hidden;
   height: 100vh;
 }
+/* --------- */
+/*  Navbar */
+/* --------- */
 
 
+
+.navbar {
+  position: fixed !important;
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.3rem 2rem !important;
+  font-size: 1.2rem !important;
+  z-index: 9999 !important;
+  width: 100%;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.nav-link {
+  padding: 0.8rem 1rem !important;
+}
 /* --------- */
 /*  MainBox */
 /* --------- */
