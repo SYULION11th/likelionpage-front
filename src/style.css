@@ -1,3 +1,10 @@
+.col {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+}
+
 /* --------- */
 /*  Preloader */
 /* --------- */
@@ -28,9 +35,9 @@
 /*  MainBox */
 /* --------- */
 
-.mainImg {
+.MainImg {
   width: 100%;
-  height: 800px;
+  height: 700px;
   position: relative;
   display : inline-block;
   margin-top: 10px;
@@ -49,12 +56,48 @@
     z-index: 1;
 }
 
+.MainButton {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 1;
+  background-color: #191919;
+  border: 0;
+  border-radius: 7px;
+  box-shadow: 0px 2px 1px 2.4px gray;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.DownButton {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  z-index: 1;
+  background: none;
+  border: 0;
+  border-radius: 7px;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  opacity: 0.9;
+}
+
 /* --------- */
 /*  Main2 */
 /* --------- */
 .blackbox {
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   background-color: black;
   float: center;
   margin: auto;
@@ -76,6 +119,71 @@
 
 
 /* --------- */
+/*  Main3 */
+/* --------- */
+.tempBox {
+  width: 100%;
+  height: 600px;
+  background-color: #ebebeb;
+  float: center;
+  margin: auto;
+}
+
+
+
+/* --------- */
+/* Main4 */
+/* --------- */
+.experience-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.experience-card {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  height: auto !important;
+}
+
+.experience-card-view {
+  box-shadow: 0 4px 5px 3px rgba(232, 227, 220, 0.8) !important;
+  color: #000 !important;
+  font-weight: 600;
+
+  background-color: #ebebeb !important;
+  opacity: 1 !important;
+  transition: all 0.5s ease 0s !important;
+  height: 100% !important;
+}
+.experience-card-view:hover {
+  transform: scale(1.04) !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 4px 5px rgba(239, 228, 212, 1) !important;
+}
+
+.card-img-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+}
+
+
+.experience-heading {
+  text-align: center;
+  color: white !important;
+  font-size: 3.6em !important;
+  font-weight: 500 !important;
+  padding-bottom: 2em !important;
+}
+
+
+
+
+/* --------- */
 /*  Footer */
 /* --------- */
 
@@ -93,4 +201,30 @@
     opacity: 0.8;
 }
 
+/* --------- */
+/*  ScrollTop */
+/* --------- */
 
+.ScrollTop {
+  position: fixed;
+  bottom: 4.5em;
+  right: 1em;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 0px 2px 1px 2.4px gray;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  opacity: 0.9;
+  z-index: 999999;
+}
+
+.ScrollButton {
+  color: white;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  
+}

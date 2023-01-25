@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css"
+import ScrollTop from "./components/ScrollTop.js"
 
 
 import './App.css';
@@ -33,6 +34,7 @@ function App() {
           <Route path="/Notice" element={<Notice />} />
         </Routes>
       </div>
+      <ScrollTop/>
       <Footer />
     </Router>
 

@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 function Main2() {
   return (
     <Container>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "center", paddingTop: "100px"  , paddingBottom: "100px" }}>
         <Col md={5}>
 
           <div className="blackbox">
