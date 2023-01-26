@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {  BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Preloader from "../src/components/Pre";
 import Main from './components/Main/Main';
 import Notice from './components/Notice/Notice';
@@ -25,7 +25,7 @@ function App() {
 
 
   return (
-    <Router>
+    <Router basename='/likelionpage-front/'>
       <Preloader load={load} />
       <div id={load ? "no-scroll" : "scroll"}>
         <Navbar />
