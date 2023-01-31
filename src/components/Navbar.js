@@ -15,7 +15,7 @@ function NavBar() {
         <Navbar.Brand as={Link} to="/">로그인</Navbar.Brand>
 
         <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/likelionpage-front/">홈</Nav.Link>
+            <Nav.Link as={Link} to="/">홈</Nav.Link>
             <Nav.Link as={Link} to="/Notice">공지</Nav.Link>
             <Nav.Link as={Link} to="/">일정</Nav.Link>
             <Nav.Link as={Link} to="/">과제</Nav.Link>

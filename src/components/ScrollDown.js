@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 const TopButton = () => {
-  const [showButton, setShowButton] = useState(false);
+  const [showButton, setShowButton] = useState(true);
 
   const scrollToDown = () => {
     window.scroll({

@@ -25,7 +25,7 @@ function App() {
 
 
   return (
-    <Router basename='/likelionpage-front/'>
+    <Router basename='likelionpage-front/'>
       <Preloader load={load} />
       <div id={load ? "no-scroll" : "scroll"}>
         <Navbar />
