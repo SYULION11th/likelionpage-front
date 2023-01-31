@@ -28,6 +28,10 @@
 /* --------- */
 
 
+.logo {
+  height: 1.4em !important;
+  width: 6em !important;
+}
 
 .navbar {
   position: fixed !important;

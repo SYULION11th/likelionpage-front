@@ -3,6 +3,7 @@ import { Container,Row,Col } from "react-bootstrap";
 import Main2 from "./Main2.js";
 import Main3 from "./Main3.js";
 import Experiences from "./Experiences.js";
+import ScrollDown from "../ScrollDown.js";
 
 function Main() {
   return (
@@ -12,7 +13,7 @@ function Main() {
             <img className="MainImg" alt="mainImg" src="img/sample.png"></img>            
             <h1 className="Title">멋쟁이 사자처럼 11기</h1>
             <button className="MainButton">아기사자 지원하기</button>
-            <button className="DownButton">V</button>
+            <ScrollDown />
 
         </Col>
         <Col md={12}>

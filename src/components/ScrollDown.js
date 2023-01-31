@@ -3,16 +3,16 @@ import React, { useState, useEffect } from 'react'
 const TopButton = () => {
   const [showButton, setShowButton] = useState(false);
 
-  const scrollToTop = () => {
+  const scrollToDown = () => {
     window.scroll({
-      top: 0,
+      top: 100000,
       behavior: 'smooth'
     })
 
   }
   useEffect(() => {
     const ShowButtonClick = () => {
-      if (window.scrollY > 700) {
+      if (window.scrollY < 700) {
         setShowButton(true)
       } else {
         setShowButton(false)
@@ -26,8 +26,8 @@ const TopButton = () => {
   return (
     <>
       {showButton &&
-          <div className="ScrollTop">
-            <button className='ScrollButton' onClick={scrollToTop} type="button">^</button>
+          <div>
+            <button className='MainButton' onClick={scrollToDown} type="button">아기사자 지원하기</button>
           </div>
       }
     </>
