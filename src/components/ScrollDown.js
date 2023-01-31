@@ -15,7 +15,7 @@ const TopButton = () => {
       if (window.scrollY < 700) {
         setShowButton(true)
       } else {
-        setShowButton(false)
+        setShowButton(true)
       }
     }
     window.addEventListener("scroll", ShowButtonClick)
