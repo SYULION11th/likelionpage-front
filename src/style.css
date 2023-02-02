@@ -323,6 +323,22 @@ body {
   border-radius: 50%;
 }
 
+@media (max-width: 767px) {
+  .logo-box {
+      width: 200px;
+      height: 200px;
+  }
+  .logo-title-box {
+      width: 380px;
+      margin-left: 19px;
+      height: 100px;
+  }
+  .Article{
+      margin-top: 40px;
+      text-align: center;
+    }
+}
+
 .logo-title {
   margin-top: 20px;
   margin-left: -35px;
