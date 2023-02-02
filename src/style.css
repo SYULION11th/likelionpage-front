@@ -598,7 +598,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  .ScrollButton, .ScrollTop {
+  .ScrollButton {
+    display: hidden;
+  }
+  .ScrollTop {
     display: hidden;
   }
 }
