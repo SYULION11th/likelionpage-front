@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Main4 from "./Main4";
+import Main6 from "./Main6";
 import sample from "./../../Assets/sample.png";
 
 function Experiences() {
@@ -16,7 +16,7 @@ function Experiences() {
             
 
           <Col md={4} className="experience-card">
-              <Main4
+              <Main6
                   imgPath={sample}
                   header="2023.01.24 ~ ing"
                   title="멋쟁이 사자처럼 삼육 11기 웹사이트"
@@ -25,7 +25,7 @@ function Experiences() {
             </Col>
 
             <Col md={4} className="experience-card">
-              <Main4
+              <Main6
                   imgPath={sample}
                   header="2023.01.24 ~ ing"
                   title="멋쟁이 사자처럼 삼육 11기 웹사이트"
@@ -34,7 +34,7 @@ function Experiences() {
             </Col>
 
             <Col md={4} className="experience-card">
-              <Main4
+              <Main6
                   imgPath={sample}
                   header="2023.01.24 ~ ing"
                   title="멋쟁이 사자처럼 삼육 11기 웹사이트"
@@ -43,7 +43,7 @@ function Experiences() {
             </Col>
 
             <Col md={4} className="experience-card">
-              <Main4
+              <Main6
                   imgPath={sample}
                   header="2023.01.24 ~ ing"
                   title="멋쟁이 사자처럼 삼육 11기 웹사이트"
@@ -52,7 +52,7 @@ function Experiences() {
             </Col>
 
             <Col md={4} className="experience-card">
-              <Main4
+              <Main6
                   imgPath={sample}
                   header="2023.01.24 ~ ing"
                   title="멋쟁이 사자처럼 삼육 11기 웹사이트"
@@ -61,7 +61,7 @@ function Experiences() {
             </Col>
 
             <Col md={4} className="experience-card">
-              <Main4
+              <Main6
                   imgPath={sample}
                   header="2023.01.24 ~ ing"
                   title="멋쟁이 사자처럼 삼육 11기 웹사이트"

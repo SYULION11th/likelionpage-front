@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-function Main3() {
+function Main5() {
   return (
     <Container>
         <Row style={{ justifyContent: "center" }}>
         <Col>
           <div className="timeline-box">
-            <img className="timeline" alt="timeline" src="img/timeline.png"></img>
+            <img className="timeline" alt="timeline" src="img/session.png"></img>
           </div>
         </Col>
       </Row>
@@ -14,4 +14,4 @@ function Main3() {
   );
 }
 
-export default Main3;
+export default Main5;

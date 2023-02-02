@@ -1,21 +1,33 @@
-import { React } from "react";
-import Card from "react-bootstrap/Card";
+import React from "react";
+import {Container, Row, Col} from "react-bootstrap";
+import StudyCards from "./StudyCards.js";
 
-function Main4(props) {
-
+function Main4() {
     return (
-        
-        <Card className="experience-card-view">
-            <Card.Header>{props.header}</Card.Header>
-            <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-            <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
-                {props.description}
-                </Card.Text>
+        <Container className="study-section">
+            <Row
+                style={{
+                    justifyContent: "center",
+                    paddingTop: "100px",
+                    paddingBottom: "100px"
+                }}>
 
-            </Card.Body>
-        </Card>
+                <Col md={5}>
+                    <div className="Title-Box">
+                        <p className="Blue-Title-Study">멋쟁이사자처럼 삼육대학교는 웹의 기초부터 심화까지 함께 공부해요.</p>
+                    </div>
+                    <div className="Description-Box">
+
+                        <p className="Blue-Description-Study">* 웹 기초 공통 교육 후 기획·디자인 / 프론트엔드 / 백엔드 트랙을 선택해 트랙별 심화교육이 진행됩니다.</p>
+                    </div>
+                </Col>
+                <Col md={6}>
+                    <div className="Study-Box">
+                        <StudyCards/>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     );
 }
 

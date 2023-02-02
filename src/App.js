@@ -25,13 +25,15 @@ function App() {
 
 
   return (
-    <Router basename='likelionpage-front/'>
+    <Router basename='/likelionpage-front/'>
       <Preloader load={load} />
       <div id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/Notice" element={<Notice />} />
+          <Route path="/Question" element={<Notice />} />
+          <Route path="/Submit" element={<Notice />} />
+          <Route path="/Login" element={<Notice />} />
         </Routes>
       </div>
       <ScrollTop/>

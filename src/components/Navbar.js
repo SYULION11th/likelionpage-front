@@ -1,28 +1,85 @@
-import React from "react";
+import {React, useState} from "react";
 import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
 import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/logo.png';
 
-function NavBar() {
-    return (
-        
-        <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/likelionpage-front/" className="d-flex">
-            <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
-        
-        <Navbar.Brand as={Link} to="/">로그인</Navbar.Brand>
 
-        <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/">홈</Nav.Link>
-            <Nav.Link as={Link} to="/Notice">공지</Nav.Link>
-            <Nav.Link as={Link} to="/">일정</Nav.Link>
-            <Nav.Link as={Link} to="/">과제</Nav.Link>
-            <Nav.Link as={Link} to="/">Q&A</Nav.Link>
-        </Nav>
+
+function NavBar() {
+
+    const [expand, updateExpanded] = useState(false);
+    const [navColour, updateNavbar] = useState(false);
+
+    function scrollHandler() {
+        if (window.scrollY >= 20) {
+            updateNavbar(true);
+        } else {
+            updateNavbar(false);
+        }
+    }
+
+    window.addEventListener("scroll", scrollHandler);
+
+    return (
+        <Navbar
+            bg="light"
+            expanded={expand}
+            fixed="top"
+            expand="md"
+            className={navColour
+                ? "sticky"
+                : "navbar"}>
+            <Container>
+
+            <Navbar.Brand href="/likelionpage-front/" className="d-flex">
+                    <img src={logo} className="img-fluid navLogo" alt="brand" />
+                    </Navbar.Brand>
+                <Navbar.Toggle
+                    aria-controls="responsive-navbar-nav"
+                    onClick={() => {
+                        updateExpanded(
+                            expand
+                                ? false
+                                : "expanded"
+                        );
+                    }}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </Navbar.Toggle>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto" defaultActiveKey="#home">
+                        
+
+
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/Question" onClick={() => updateExpanded(false)}>
+
+                                Q&A
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/Submit" onClick={() => updateExpanded(false)}>
+
+                                Submit
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link as={Link} to="/Login" onClick={() => updateExpanded(false)}>
+
+                                Login
+                            </Nav.Link>
+                        </Nav.Item>
+
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
         </Navbar>
     );
-    }
+}
 
 export default NavBar;

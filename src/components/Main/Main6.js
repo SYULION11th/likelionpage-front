@@ -1,6 +1,6 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-function Main2() {
+function Main6() {
     return (
         <Container>
             <Row
@@ -11,8 +11,7 @@ function Main2() {
                 }}>
                 <Col md={12}>
                     <div className="article-title-box">
-                        <p className="Blue-Title-Article">코딩 경험이 없어도 괜찮아요.</p>
-                        <p className="Blue-Title-Article">멋대에서 코딩을 배워 사자들과 함께 아이디어를 실현해보세요.</p>
+                        <p className="Blue-Title-Article">멋쟁이사자처럼 삼육대학교와 함께 “가능성을 현실로”</p>
                     </div>
                 </Col>
                 <Col md={3}>
@@ -30,4 +29,4 @@ function Main2() {
     );
 }
 
-export default Main2;
+export default Main6;
