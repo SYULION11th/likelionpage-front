@@ -373,6 +373,7 @@ body {
   background-color: #163C7E;
   border: 1px solid #163C7E;
   border-radius: 30px;
+  margin-bottom: 30px;
 }
 
 .Blue-Title-Article {
@@ -592,7 +593,7 @@ body {
 .ScrollButton {
   color: black;
   border: none;
+  margin: auto;
   background: none;
   font-size: 1.5em;
-  
 }
