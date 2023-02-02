@@ -7,7 +7,7 @@ function Main2() {
                 style={{
                     justifyContent: "center",
                     paddingTop: "100px",
-                    paddingBottom: "100px"
+                    paddingBottom: "100px",
                 }}>
                 <Col md={12}>
                     <div className="article-title-box">

@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Preloader from "../src/components/Pre";
 import Main from './components/Main/Main';
 import Notice from './components/Notice/Notice';
+import Question from './components/Question/Question';
+import Submit from './components/Submit/Submit';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,8 +33,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/Question" element={<Notice />} />
-          <Route path="/Submit" element={<Notice />} />
+          <Route path="/Question" element={<Question />} />
+          <Route path="/Submit" element={<Submit />} />
           <Route path="/Login" element={<Notice />} />
         </Routes>
       </div>
