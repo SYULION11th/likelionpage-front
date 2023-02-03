@@ -18,34 +18,6 @@ body {
   
 }
 
-/* --------- */
-/*  Preloader */
-/* --------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #ebebeb;
-  background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#preloader-none {
-  opacity: 0;
-}
-
-#no-scroll {
-  overflow: hidden;
-  height: 100vh;
-}
-
-
-
-
 
 /* --------- */
 /*  Navbar */
@@ -214,6 +186,23 @@ body {
   filter: brightness(0.4);
 }
 
+.MainTitle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+  font-family: 'NotoSans-Bd';
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 5%;
+}
+
 .MainButton {
   position: absolute;
   top: 60%;
@@ -243,6 +232,13 @@ body {
 }
 
 @media (max-width: 767px) {
+  .MainTitle {
+      font-size: 2.5rem !important;
+      top: 45%;
+  }
+}
+
+@media (max-width: 767px) {
   .MainButton {
       width: 60%;
       font-size: 1.2rem !important;
@@ -255,15 +251,21 @@ body {
 /* --------- */
 
 .typeBox {
-  top: 20%;
   position: absolute;
+  top: 25%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 50%;
-  padding-bottom: 2.25em;
-  max-height: 2.2em;
-  position: absolute;
-  z-index: 1 !important;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  color: white;
+  font-family: 'NotoSans-Bd';
+  font-weight: bold;
+  z-index: 1;
+  text-align: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 5%;
+  
 }
 
 .Typewriter {
@@ -599,9 +601,9 @@ body {
 
 @media (max-width: 768px) {
   .ScrollButton {
-    display: hidden;
+    display: none;
   }
   .ScrollTop {
-    display: hidden;
+    display: none;
   }
 }

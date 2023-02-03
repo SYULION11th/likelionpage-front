@@ -7,7 +7,7 @@ function Type() {
             <Typewriter
         options={{
             strings: [
-            "POSSIBILITY TO REALITYㅤㅤㅤㅤㅤ멋쟁이사자처럼 삼육대학교 11기",
+            "POSSIBILITY TO REALITY",
             ],
             cursor: "|",
             autoStart: true,

@@ -24,17 +24,17 @@ function Main() {
                         backgroundPosition: "center",
                         backgroundSize: "cover",
                         filter: "brightness(0.4)"
-                    }}> 
-
-                </Col>
+                    }}></Col>
 
                 <Col md={12}>
-                      <div className="typeBox">
-                      <Type/>
-                  </div>
-
-                  <button className="MainButton">아기사자 지원하기</button>
-                  <ScrollDown/>
+                    <div className="typeBox">
+                        <Type/>
+                    </div>
+                    <div className="MainTitle">
+                        <h1>멋쟁이사자처럼 삼육대학교 11기</h1>
+                    </div>
+                    <button className="MainButton">아기사자 지원하기</button>
+                    <ScrollDown/>
 
                 </Col>
 

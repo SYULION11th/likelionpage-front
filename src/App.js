@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Preloader from "../src/components/Pre";
 import Main from './components/Main/Main';
 import Notice from './components/Notice/Notice';
 import Question from './components/Question/Question';
@@ -15,21 +14,10 @@ import ScrollTop from "./components/ScrollTop.js"
 import './App.css';
 
 function App() {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
 
   return (
     <Router basename='/likelionpage-front/'>
-      <Preloader load={load} />
-      <div id={load ? "no-scroll" : "scroll"}>
+      <div id='load'>
         <Navbar />
         <Routes>
           <Route path="/" element={<Main />} />
