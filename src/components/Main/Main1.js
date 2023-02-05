@@ -15,7 +15,7 @@ function Main1() {
                         <img className="logo-square" alt="logo-sqaure" src="img/logo.png"></img>
                     </div>
                 </Col>
-                <Col md={7}>
+                <Col md={5}>
                     <div className="logo-title-box">
                         <img className="logo-title" alt="logo-title" src="img/logo-title.png"></img>
                     </div>

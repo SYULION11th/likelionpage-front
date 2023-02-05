@@ -95,7 +95,7 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 3800 ? "scroll-section-blur" : "noscroll-section-blur"}
+                    className={scrollPosition > 3700 ? "scroll-section-blur" : "noscroll-section-blur"}
                     style={{
                         backgroundImage: "url(img/lion-background.png)",
                         backgroundRepeat: "no-repeat",
