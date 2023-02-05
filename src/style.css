@@ -988,10 +988,12 @@ body {
 @media (max-width: 768px) {
     .scroll-section-move {
         margin-left: 0px;
+        filter: blur(0px);
         transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
     .noscroll-section-move {
-        margin-left: -700px;
+        margin-left: 0px;
+        filter: blur(5px);
         transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
 }
