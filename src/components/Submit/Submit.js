@@ -62,7 +62,7 @@ function GoComplete(navigate) {
 
     setTimeout(function () {
         if (isSubmit === true) {
-          navigate("/Submit/SubmitComplete");
+          navigate("/Submit/SubmitComplete/");
         }
 
     }, 2000);
@@ -70,6 +70,7 @@ function GoComplete(navigate) {
 
 function Submit() {
   const navigate = useNavigate(); 
+  console.log(navigate);
     return (
         <Container fluid="fluid" className="p-0">
             <Row style={{
