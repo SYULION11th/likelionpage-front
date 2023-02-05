@@ -236,7 +236,7 @@ body {
 @media (max-width: 767px) {
     .MainTitle {
         width: 90%;
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
         top: 40%;
     }
 }
