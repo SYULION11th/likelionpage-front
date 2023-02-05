@@ -8,6 +8,9 @@ react-router-dom
 react-bootstrap
 
 bootstrap
+
+typewriter-effect
+
 ****
 
 진행상황 23-02-05 (조우진)
