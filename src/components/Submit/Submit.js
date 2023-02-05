@@ -97,7 +97,7 @@ function Submit() {
                 </Col>
 
                 <Col md={12}>
-                    <input id="Department" className="submit-textarea2" placeholder="홍익인간과"></input>
+                    <input id="Department" className="submit-textarea2" placeholder="컴퓨터공학부"></input>
                 </Col>
                 <Col md={12}>
                     <input id="studentid" className="submit-textarea3" placeholder="2023100823"></input>
@@ -112,7 +112,7 @@ function Submit() {
                     <input id="email" className="submit-textarea6" placeholder="KimMutSa@naver.com"></input>
                 </Col>
                 <Col md={12}>
-                    <textarea id="content" className="submit-textarea7" placeholder="내용"></textarea>
+                    <textarea id="content" className="submit-textarea7" placeholder="지원동기 및 내용"></textarea>
                 </Col>
                 <Col md={12}>
                     <div>
