@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 var isSubmit = false;
 
+
 function TextInput() {
 
     var getName = document
