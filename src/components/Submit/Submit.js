@@ -1,7 +1,8 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import axios from "axios";
-import {Navigate} from "react-router-dom"
+import { useNavigate } from 'react-router-dom';
+
 
 var isSubmit = false;
 
@@ -57,23 +58,18 @@ function TextInput() {
 
 }
 
-function GoComplete() {
+function GoComplete(navigate) {
 
     setTimeout(function () {
-        console.log('Works!');
-
-        console.log("tesat" + isSubmit);
-
         if (isSubmit === true) {
-            window.location.href = "/likelionpage-front/Submit/SubmitComplete/";
-
+          navigate("/Submit/SubmitComplete");
         }
 
-    }, 3000);
+    }, 2000);
 }
 
-function Submit({history}) {
-
+function Submit() {
+  const navigate = useNavigate(); 
     return (
         <Container fluid="fluid" className="p-0">
             <Row style={{
@@ -123,13 +119,11 @@ function Submit({history}) {
                             className="post PostButton"
                             onClick={() => {
                                 TextInput();
-                                GoComplete();
+                                GoComplete(navigate);
                             }}>
                             제출하기
                         </button>
-                        <div>
-                            {isSubmit === true && <Navigate to="/Submit/SubmitComplete"/>}
-                        </div>
+
                     </div>
                 </Col>
             </Row>
