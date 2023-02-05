@@ -568,38 +568,243 @@ body {
     border: 1px solid #FFFFFF;
 }
 
-
 .SubmitSubTitle {
-  color: white;
-  width: 80%;
-  font-size: 1em;
-  font-weight: 400;
-  margin-top: 1%;
-  margin-bottom: 5%;
-  text-align: center;
-  left: 50%;
-  top: 26%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-}
-
-.submit-textarea {
-    width: 70%;
-    height: 60%;
-
+    color: white;
+    width: 80%;
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    text-align: center;
     left: 50%;
-    top: 60%;
+    top: 26%;
     transform: translate(-50%, -50%);
     position: absolute;
+}
 
+@media (max-width: 768px) {
+    .SubmitTitle {
+        font-size: 1.1em;
+    }
+    .SubmitSubTitle {
+        margin-top: 2%;
+        font-size: 0.8em;
+    }
+}
+
+.submit-textarea1 {
+    width: 60%;
+    height: 5%;
+    left: 50%;
+    top: 34%;
+    transform: translate(-50%, -50%);
+    position: absolute;
     max-height: 80%;
     display: block;
     margin-top: 2.5em;
-    text-decoration: none;
+    padding: 1em;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
     transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-textarea2 {
+    width: 60%;
+    height: 5%;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 80%;
+    display: block;
+    margin-top: 2.5em;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-textarea3 {
+    width: 60%;
+    height: 5%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 80%;
+    display: block;
+    margin-top: 2.5em;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-textarea4 {
+    width: 60%;
+    height: 5%;
+    left: 50%;
+    top: 58%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 80%;
+    display: block;
+    margin-top: 2.5em;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-textarea5 {
+    width: 60%;
+    height: 5%;
+    left: 50%;
+    top: 66%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 80%;
+    display: block;
+    margin-top: 2.5em;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-textarea6 {
+    width: 60%;
+    height: 5%;
+    left: 50%;
+    top: 74%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 80%;
+    display: block;
+    margin-top: 2.5em;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+.submit-textarea7 {
+    width: 60%;
+    height: 50%;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 80%;
+    display: block;
+    margin-top: 2.5em;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .submit-textarea1 {
+        width: 80%;
+    }
+    .submit-textarea2 {
+        width: 80%;
+
+    }
+    .submit-textarea3 {
+        width: 80%;
+
+    }
+    .submit-textarea4 {
+        width: 80%;
+
+    }
+    .submit-textarea5 {
+        width: 80%;
+
+    }
+    .submit-textarea6 {
+        width: 80%;
+
+    }
+    .submit-textarea7 {
+        width: 80%;
+
+    }
+}
+
+.PostButton {
+    width: 40%;
+    height: 10%;
+    left: 50%;
+    top: 150%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 0 1px #0B63CE;
+    background-color: #0B63CE;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+}
+.PostButton:hover {
+    background-color: #0B63CE;
+    box-shadow: 0 0 0 2px #ebebeb;
+}
+
+@media (max-width: 768px) {
+    .PostButton {
+        width: 80%;
+        font-weight: 400;
+    }
+}
+.CompleteBox {
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    max-height: 80%;
+    background-color: #000;
+    display: block;
+    margin-top: 2.5em;
+    padding: 1em;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+    position: fixed;
+    z-index: 1000;
 }
 
 /* --------- */

@@ -16,7 +16,7 @@ function SubmitButton(props) {
       <Container fluid="fluid">
         <Row style={{ justifyContent: "center" }}>
           <Col xs={12} md={12}>
-            <Link class="SubmitButton" as={Link} to="/Submit" onClick={scrollToTop}>
+            <Link className="SubmitButton" as={Link} to="/Submit" onClick={scrollToTop}>
               11기 아기사자 지원하기
             </Link>
           </Col>

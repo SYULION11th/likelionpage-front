@@ -16,7 +16,7 @@ function QuestionButton(props) {
       <Container fluid="fluid">
         <Row style={{ justifyContent: "center" }}>
           <Col xs={12} md={12}>
-            <Link class="QuestionButton" as={Link} to="/Question" onClick={scrollToTop}>
+            <Link className="QuestionButton" as={Link} to="/Question" onClick={scrollToTop}>
             11기 모집 관련 질문하기            </Link>
           </Col>
         </Row>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Main6 from "./Main6";
+import Main6 from "./Main8";
 import sample from "./../../Assets/sample.png";
 
 function Experiences() {
