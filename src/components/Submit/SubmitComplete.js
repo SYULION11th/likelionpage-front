@@ -2,17 +2,18 @@ import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import CompleteCheck from "../../Assets/complete-check.png";
 
+function scrollToTop() {
+  window.scroll({
+    top: 0,
+    behavior: 'smooth'
+  })
+}
+
 function SubmitComplete() {
   window.onload = function () {
     scrollToTop();
   }
-  const scrollToTop = () => {
-    window.scroll({
-      top: 0,
-      behavior: 'smooth'
-    })
-  
-  }
+
     return (
         <Container fluid="fluid" className="p-0">
             <Row style={{
