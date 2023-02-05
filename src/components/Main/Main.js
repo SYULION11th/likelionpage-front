@@ -9,7 +9,18 @@ import Main6 from "./Main6.js";
 import ScrollDown from "../ScrollDown.js";
 import Type from "./Type.js";
 
+import {useState, useEffect} from "react";
+
 function Main() {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const updateScroll = () => {
+        setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", updateScroll);
+    }, []);
+
     return (
         <Container fluid="fluid" className="p-0">
             <Row style={{
@@ -38,11 +49,18 @@ function Main() {
 
                 </Col>
 
-                <Col md={12}>
+                <Col
+                    md={12}
+                    className={scrollPosition > 250
+                        ? "scroll-section-move"
+                        : "noscroll-section-move"}>
                     <Main1/>
                 </Col>
                 <Col
                     md={12}
+                    className={scrollPosition > 800
+                        ? "scroll-section-blur"
+                        : "noscroll-section-blur"}
                     style={{
                         backgroundImage: "url(img/study-background.png)",
                         backgroundRepeat: "no-repeat",
@@ -51,21 +69,33 @@ function Main() {
                     }}>
                     <Main2/>
                 </Col>
-                <Col md={12}>
+                <Col
+                    md={12}
+                    className={scrollPosition > 1400
+                        ? "scroll-section-blur"
+                        : "noscroll-section-blur"}>
                     <Main3/>
                 </Col>
                 <Col
                     md={12}
+                    className={scrollPosition > 2300
+                        ? "scroll-section-blur"
+                        : "noscroll-section-blur"}
                     style={{
                         backgroundColor: "#015CCC"
                     }}>
                     <Main4/>
                 </Col>
-                <Col md={12}>
+                <Col
+                    md={12}
+                    className={scrollPosition > 3200
+                        ? "scroll-section-blur"
+                        : "noscroll-section-blur"}>
                     <Main5/>
                 </Col>
                 <Col
                     md={12}
+                    className={scrollPosition > 3600 ? "scroll-section-blur" : "noscroll-section-blur"}
                     style={{
                         backgroundImage: "url(img/lion-background.png)",
                         backgroundRepeat: "no-repeat",

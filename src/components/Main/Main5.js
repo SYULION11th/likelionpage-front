@@ -5,8 +5,8 @@ function Main5() {
     <Container>
         <Row style={{ justifyContent: "center" }}>
         <Col>
-          <div className="timeline-box">
-            <img className="timeline" alt="timeline" src="img/session.png"></img>
+          <div className="what-box">
+            <img className="what" alt="what" src="img/session.png"></img>
           </div>
         </Col>
       </Row>

@@ -340,7 +340,7 @@ body {
 
 .logo-title {
     margin-top: 20px;
-    margin-left: -35px;
+    margin-left: -45px;
     width: 100%;
 }
 
@@ -348,7 +348,7 @@ body {
     width: 73%;
     color: black;
     font-size: 20px;
-    margin-left: 50px;
+    margin-left: 42px;
     margin-bottom: 8%;
     float: left;
 }
@@ -386,9 +386,19 @@ body {
 .Blue-Article {
     margin: auto;
     color: white;
-    font-size: 19px;
+    font-size: 17px;
     float: center;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .Blue-Title-Article {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+    .Blue-Article {
+        font-size: 17px;
+    }
 }
 
 /* --------- */
@@ -406,16 +416,28 @@ body {
     margin: auto;
 }
 
+@media (max-width: 767px) {
+    .timeline-box {
+        width: 220%;
+        margin-left: -60%;
+    }
+}
+
 /* --------- */
 /* Main4 */
 /* --------- */
 
-.Title-Box {
+.Blue-Title-Box {
     width: 100%;
     height: auto;
     display: block;
     margin-bottom: 30em;
 
+}
+@media (max-width: 767px) {
+    .Blue-Title-Box {
+        margin-bottom: 5em;
+    }
 }
 .Blue-Title-Study {
     color: white;
@@ -425,6 +447,12 @@ body {
     float: left;
 
 }
+@media (max-width: 767px) {
+    .Blue-Title-Study {
+        font-size: 2em;
+        margin-bottom: 0%;
+    }
+}
 
 .Blue-Description-Study {
     color: white;
@@ -432,6 +460,12 @@ body {
     font-weight: 400;
     float: left;
     margin-top: 30%;
+}
+@media (max-width: 767px) {
+    .Blue-Description-Study {
+        font-size: 0.7em;
+        margin-top: 10%;
+    }
 }
 .Study-Box {
     width: 100%;
@@ -462,9 +496,44 @@ body {
     margin-bottom: 2.5% !important;
     text-align: center !important;
 }
+@media (max-width: 767px) {
+    .study-card {
+        padding: 8px 5px !important;
+    }
+    
+    .study-card-view {
+        width: 100%;
+        height: 100%;
+    }
+    .card-text {
+        font-size: 0.7em !important;
+    }
+}
+/* --------- */
+/*  Main5 */
+/* --------- */
+
+.what-box {
+    width: 130%;
+    height: 100%;
+    margin: auto auto auto -14%;
+}
+.what {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .what-box {
+        width: 290%;
+        margin-left: -135%;
+    }
+}
 
 /* --------- */
-/*  Main6 */
+/*  TRASH GARBAGE */
 /* --------- */
 .experience-section {
     position: relative !important;
@@ -891,4 +960,38 @@ body {
     .ScrollTop {
         display: none;
     }
+}
+/* --------- */
+/*  ScrollAnimation */
+/* --------- */
+
+.scroll-section-move {
+    margin-left: 0px;
+    transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+}
+.noscroll-section-move {
+    margin-left: -1000px;
+    transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+
+}
+@media (max-width: 768px) {
+    .scroll-section-move {
+        margin-left: 0px;
+        filter: blur(0px);
+        transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+    }
+    .noscroll-section-move {
+        margin-left: 0px;
+        filter: blur(5px);
+        transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+    }
+}
+
+.scroll-section-blur {
+    filter: blur(0px);
+    transition : all 0.6s ease-in;
+}
+.noscroll-section-blur {
+    filter: blur(5px);
+    transition : all 0.6s ease-in;
 }

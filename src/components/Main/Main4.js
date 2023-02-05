@@ -13,7 +13,7 @@ function Main4() {
                 }}>
 
                 <Col md={5}>
-                    <div className="Title-Box">
+                    <div className="Blue-Title-Box">
                         <p className="Blue-Title-Study">멋쟁이사자처럼 삼육대학교는 웹의 기초부터 심화까지 함께 공부해요.</p>
                     </div>
                     <div className="Description-Box">
