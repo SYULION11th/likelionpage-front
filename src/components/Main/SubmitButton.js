@@ -1,6 +1,5 @@
 import {React} from "react";
 import {Link} from "react-router-dom";
-import { Container,Row,Col } from "react-bootstrap";
 
 
 function SubmitButton(props) {
@@ -13,15 +12,10 @@ function SubmitButton(props) {
     }
 
     return (
-      <Container fluid="fluid">
-        <Row style={{ justifyContent: "center" }}>
-          <Col xs={12} md={12}>
-            <Link className="SubmitButton" as={Link} to="/Submit" onClick={scrollToTop}>
-              11기 아기사자 지원하기
-            </Link>
-          </Col>
-        </Row>
-      </Container>
+        <Link className="SubmitButton" as={Link} to="/Submit" onClick={scrollToTop}>
+          <br></br>
+          11기 아기사자 지원하기
+        </Link>
     );
 }
 
