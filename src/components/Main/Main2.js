@@ -17,12 +17,12 @@ function Main2() {
                 </Col>
                 <Col md={3}>
                     <div className="article-content-box">
-                        <p className="Blue-Article">초급자를 위한 VOD 강의 무료 제공</p>
+                        <p className="Blue-Article">초급자를 위한 VOD 강의 <br/>무료 제공</p>
                     </div>
                 </Col>
                 <Col md={3}>
                     <div className="article-content-box">
-                        <p className="Blue-Article">서비스 빌딩을 위한 기획 / 디자인 입체적 교육</p>
+                        <p className="Blue-Article">서비스 빌딩을 위한 <br/>기획 / 디자인 입체적 교육</p>
                     </div>
                 </Col>
             </Row>

@@ -41,8 +41,8 @@ function Main() {
                     <div className="typeBox">
                         <Type/>
                     </div>
-                    <div className="MainTitle">
-                        <h1>멋쟁이사자처럼 삼육대학교 11기</h1>
+                    <div className="MainTitleBox">
+                        <h1 className="MainTitle">멋쟁이사자처럼 삼육대학교 11기</h1>
                     </div>
                     <button className="MainButton">아기사자 지원하기</button>
                     <ScrollDown/>
@@ -58,7 +58,7 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 800
+                    className={scrollPosition > 1000
                         ? "scroll-section-blur"
                         : "noscroll-section-blur"}
                     style={{
@@ -71,7 +71,7 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 1400
+                    className={scrollPosition > 1700
                         ? "scroll-section-blur"
                         : "noscroll-section-blur"}>
                     <Main3/>
@@ -95,7 +95,7 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 3600 ? "scroll-section-blur" : "noscroll-section-blur"}
+                    className={scrollPosition > 3800 ? "scroll-section-blur" : "noscroll-section-blur"}
                     style={{
                         backgroundImage: "url(img/lion-background.png)",
                         backgroundRepeat: "no-repeat",

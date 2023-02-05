@@ -64,14 +64,14 @@ function NavBar() {
                         <Nav.Item>
                             <Nav.Link as={Link} to="/Submit" onClick={() => updateExpanded(false)}>
 
-                                Submit
+                                지원하기
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
                             <Nav.Link as={Link} to="/Login" onClick={() => updateExpanded(false)}>
 
-                                Login
+                                로그인
                             </Nav.Link>
                         </Nav.Item>
 

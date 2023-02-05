@@ -194,7 +194,7 @@ body {
     font-weight: bold;
     z-index: 1;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 5%;
@@ -220,6 +220,7 @@ body {
     letter-spacing: 0.1rem;
     text-align: center;
     opacity: 0.7;
+    transition: all 0.3s ease-out 0s;
 }
 .MainButton:hover {
     opacity: 1;
@@ -231,7 +232,7 @@ body {
 @media (max-width: 767px) {
     .MainTitle {
         width: 90%;
-        font-size: 2.5rem !important;
+        font-size: 1.5rem !important;
         top: 40%;
     }
 }
@@ -326,11 +327,13 @@ body {
     .logo-box {
         width: 200px;
         height: 200px;
+        margin-bottom: 40px;
     }
     .logo-title-box {
         width: 380px;
         margin-left: 19px;
         height: 100px;
+        margin-bottom: 20px;
     }
     .Article {
         margin-top: 40px;
@@ -365,7 +368,7 @@ body {
 }
 .article-content-box {
     width: 100%;
-    height: 5em;
+    height: 6em;
     display: flex;
     justify-content: center;
     padding: 0 10%;
@@ -386,7 +389,7 @@ body {
 .Blue-Article {
     margin: auto;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
     float: center;
     text-align: center;
 }
@@ -428,21 +431,23 @@ body {
 /* --------- */
 
 .Blue-Title-Box {
-    width: 100%;
+    width: 105%;
     height: auto;
     display: block;
+    margin-top: 0.6em;
     margin-bottom: 30em;
 
 }
 @media (max-width: 767px) {
     .Blue-Title-Box {
         margin-bottom: 5em;
+        margin-left: 7%;
     }
 }
 .Blue-Title-Study {
     color: white;
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 2.6em;
+    font-weight: 800;
     margin-bottom: 5%;
     float: left;
 
@@ -463,8 +468,10 @@ body {
 }
 @media (max-width: 767px) {
     .Blue-Description-Study {
+        text-align: left;
         font-size: 0.7em;
         margin-top: 10%;
+        margin-left: 7%;
     }
 }
 .Study-Box {
