@@ -445,7 +445,8 @@ body {
     border: 1px solid #0B63CE !important;
     border-radius: 15px !important;
     box-shadow: 0 2px 1px 1px rgba(35, 42, 116, 0.581) !important;
-}
+    transition : 0.5s !important;
+  }
 
 .study-card-view:hover {
     border: 1px solid white !important;
@@ -509,9 +510,12 @@ body {
     height: 5em;
     display: flex;
     justify-content: center;
+    padding-top: 1.5em;
     background-color: #163C7E;
     border: 1px solid #163C7E;
     border-radius: 30px;
+    transition : 0.5s !important;
+
 }
 
 .QuestionButton,
@@ -519,7 +523,6 @@ body {
     width: 100%;
     height: 100%;
     display: block;
-    margin-top: 1.2em;
     text-decoration: none;
     text-align: center;
     font-size: 20px;

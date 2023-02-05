@@ -21,7 +21,7 @@ function Main6() {
                         <SubmitButton/>
                     </div>
                 </Col>
-                ?nbsp;
+                &nbsp;
                 <Col md={12}>
                     <div className="button-box">
                         <QuestionButton/>
