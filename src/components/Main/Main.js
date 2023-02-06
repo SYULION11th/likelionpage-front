@@ -31,7 +31,7 @@ function Main() {
                     md={12}
                     className="MainBackground"
                     style={{
-                        backgroundImage: "url(img/main.png)",
+                        backgroundImage: "url(img/Main.png)",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
                         backgroundSize: "cover",
