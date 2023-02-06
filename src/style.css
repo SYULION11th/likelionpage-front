@@ -1014,7 +1014,7 @@ body {
         transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
     .noscroll-section-move {
-        margin-left: -2560px;
+        margin-left: -2000px;
         transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
 }
