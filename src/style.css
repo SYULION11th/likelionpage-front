@@ -181,7 +181,6 @@ body {
     width: 100%;
     height: 600px;
     position: relative;
-    margin-bottom: 5%;
 }
 
 @media (min-height: 1070px) {
@@ -278,8 +277,8 @@ body {
 
 @media (min-width: 1550px) {
     .typeBox {
-        font-size: 1.62rem;
-        width: 35%;
+        font-size: 1.60rem;
+        width: 36%;
     }
 }
 
