@@ -1,5 +1,5 @@
 * {
-    transition : all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
 }
 
 html {
@@ -459,7 +459,7 @@ body {
 @media (max-width: 767px) {
     .Blue-Title-Study {
         font-size: 2em;
-        margin-bottom: 0%;
+        margin-bottom: 0;
     }
 }
 
@@ -493,8 +493,8 @@ body {
     border: 1px solid #0B63CE !important;
     border-radius: 15px !important;
     box-shadow: 0 2px 1px 1px rgba(35, 42, 116, 0.581) !important;
-    transition : 0.5s !important;
-  }
+    transition: 0.5s !important;
+}
 
 .study-card-view:hover {
     border: 1px solid white !important;
@@ -511,7 +511,7 @@ body {
     .study-card {
         padding: 8px 5px !important;
     }
-    
+
     .study-card-view {
         width: 100%;
         height: 100%;
@@ -596,11 +596,9 @@ body {
     background-color: #163C7E;
     border: 1px solid #163C7E;
     border-radius: 30px;
-    transition : 0.5s !important;
+    transition: 0.5s !important;
 
 }
-
-
 
 .QuestionButton,
 .SubmitButton {
@@ -874,46 +872,45 @@ body {
     }
 }
 
-
 /* --------- */
 /*  SubmitComplete */
 /* --------- */
 
 .SubmitCompleteBox {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  
-  padding: 2rem;
-  
-  width: 70%;
-  height: 25%;
-  background: #F9F9F9;
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 155px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    padding: 2rem;
+
+    width: 70%;
+    height: 25%;
+    background: #F9F9F9;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 155px;
 }
 
 .submit-check-img {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
 
-  width: 70px;
-  height: 70px;
+    width: 70px;
+    height: 70px;
 }
 
 .SubmitCompleteTitle {
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
 
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-align: center;
-  color: black;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
 }
 
 /* --------- */
@@ -977,32 +974,32 @@ body {
 /* --------- */
 
 .scroll-section-move {
-    margin-left: 0px;
-    transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+    margin-left: 0;
+    transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
 }
 .noscroll-section-move {
     margin-left: -700px;
-    transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+    transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
 
 }
 @media (max-width: 768px) {
     .scroll-section-move {
-        margin-left: 0px;
+        margin-left: 0;
         filter: blur(0px);
-        transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+        transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
     .noscroll-section-move {
-        margin-left: 0px;
+        margin-left: 0;
         filter: blur(5px);
-        transition : all 0.8s cubic-bezier(.57,.08,.38,.97);
+        transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
 }
 
 .scroll-section-blur {
     filter: blur(0px);
-    transition : all 0.6s ease-in;
+    transition: all 0.6s ease-in;
 }
 .noscroll-section-blur {
     filter: blur(5px);
-    transition : all 0.6s ease-in;
+    transition: all 0.6s ease-in;
 }

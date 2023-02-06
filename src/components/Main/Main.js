@@ -71,7 +71,7 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 1700
+                    className={scrollPosition > 1550
                         ? "scroll-section-blur"
                         : "noscroll-section-blur"}>
                     <Main3/>
