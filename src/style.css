@@ -176,16 +176,21 @@ body {
 /*  MainBox */
 /* --------- */
 
-.MainImg {
+.MainBackground {
     left: 0;
     width: 100%;
-    height: auto !important;
-    position: absolute;
-    display: inline-block;
-    margin-top: 10px;
+    height: 600px;
+    position: relative;
     margin-bottom: 5%;
-    filter: brightness(0.4);
 }
+
+@media (min-height: 1070px) {
+    .MainBackground {
+        height: 1000px;
+    }
+}
+
+
 
 .MainTitle {
     position: absolute;
@@ -258,7 +263,7 @@ body {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 35%;
+    width: 38%;
     color: white;
     font-family: 'NotoSans-Bd';
     font-weight: bold;
@@ -269,6 +274,13 @@ body {
     margin-top: 10px;
     margin-bottom: 5%;
 
+}
+
+@media (min-width: 1550px) {
+    .typeBox {
+        font-size: 1.65rem;
+        width: 35%;
+    }
 }
 
 .Typewriter {
@@ -344,6 +356,7 @@ body {
         text-align: center;
     }
 }
+
 
 .logo-title {
     margin-top: 20px;
@@ -991,6 +1004,18 @@ body {
     .noscroll-section-move {
         margin-left: 0;
         filter: blur(5px);
+        transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
+    }
+}
+
+
+@media (min-width: 1550px) {
+    .scroll-section-move {
+        margin-left: 0;
+        transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
+    }
+    .noscroll-section-move {
+        margin-left: -2560px;
         transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
 }

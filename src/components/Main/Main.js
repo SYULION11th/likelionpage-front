@@ -25,11 +25,12 @@ function Main() {
         <Container fluid="fluid" className="p-0">
             <Row style={{
                     justifyContent: "center"
+
                 }}>
                 <Col
                     md={12}
+                    className="MainBackground"
                     style={{
-                        height: "600px",
                         backgroundImage: "url(img/main.png)",
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
@@ -58,7 +59,7 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 1000
+                    className={scrollPosition > 900
                         ? "scroll-section-blur"
                         : "noscroll-section-blur"}
                     style={{
