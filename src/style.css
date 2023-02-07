@@ -693,9 +693,10 @@ body {
 
 .SubmitQuestion {
     margin-top: 1em;
-    padding: 2em;
+    padding: 3em;
+    padding-left: 0em;
     text-align: left;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
@@ -704,16 +705,15 @@ body {
 }
 
 .BreakLine {
-    margin-top: -45px;
-    margin-left: 35px;
-    width: 200px;
+    margin-top: -65px;
+    width: 130px;
     height: 0;
     border: 0.8px solid #FFFFFF;
 }
 
-.submit-textarea {
+.submit-textinput {
     margin: auto;
-    width: 90%;
+    width: 100%;
     height: 5%;
     max-height: 80%;
     display: block;
@@ -727,16 +727,13 @@ body {
     border: none;
 }
 
-.submit-textarea2 {
-    width: 60%;
-    height: 5%;
-    left: 50%;
-    top: 42%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    max-height: 80%;
+
+.submit-textarea {
+    width: 100%;
+    height: 300%;
+    max-height: 500%;
     display: block;
-    margin-top: 2.5em;
+    margin-top: 1em;
     padding: 1em;
     text-align: left;
     font-size: 17px;
@@ -746,130 +743,6 @@ body {
     border: none;
 }
 
-.submit-textarea3 {
-    width: 60%;
-    height: 5%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    max-height: 80%;
-    display: block;
-    margin-top: 2.5em;
-    padding: 1em;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-    border-radius: 10px;
-    border: none;
-}
-
-.submit-textarea4 {
-    width: 60%;
-    height: 5%;
-    left: 50%;
-    top: 58%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    max-height: 80%;
-    display: block;
-    margin-top: 2.5em;
-    padding: 1em;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-    border-radius: 10px;
-    border: none;
-}
-
-.submit-textarea5 {
-    width: 60%;
-    height: 5%;
-    left: 50%;
-    top: 66%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    max-height: 80%;
-    display: block;
-    margin-top: 2.5em;
-    padding: 1em;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-    border-radius: 10px;
-    border: none;
-}
-
-.submit-textarea6 {
-    width: 60%;
-    height: 5%;
-    left: 50%;
-    top: 74%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    max-height: 80%;
-    display: block;
-    margin-top: 2.5em;
-    padding: 1em;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-    border-radius: 10px;
-    border: none;
-}
-
-.submit-textarea7 {
-    width: 60%;
-    height: 50%;
-    left: 50%;
-    top: 205%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    max-height: 80%;
-    display: block;
-    margin-top: 2.5em;
-    padding: 1em;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s ease-in-out;
-    border-radius: 10px;
-    border: none;
-}
-
-@media (max-width: 768px) {
-    .submit-textarea1 {
-        width: 80%;
-    }
-    .submit-textarea2 {
-        width: 80%;
-
-    }
-    .submit-textarea3 {
-        width: 80%;
-
-    }
-    .submit-textarea4 {
-        width: 80%;
-
-    }
-    .submit-textarea5 {
-        width: 80%;
-
-    }
-    .submit-textarea6 {
-        width: 80%;
-
-    }
-    .submit-textarea7 {
-        width: 80%;
-
-    }
-}
 
 .CheckBoxContainer {
     width: 100%;

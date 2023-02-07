@@ -31,7 +31,7 @@ function TextInput() {
 
     axios
         .post(
-            "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
+            "https://port-0-likelionpage-back-1jx7m2gldjq756s.gksl2.cloudtype.app/api/jungb" +
                     "o/",
             {
                 name: getName,
@@ -94,62 +94,62 @@ function Submit() {
 
                 </Col>
 
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">1. 지원자의 성함을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
-                <Col xs={12} md={8}>
-                    <input id="name" className="submit-textarea" placeholder="지원자 본인의 이름을 입력해주세요."></input>
+                <Col xs={11} md={7}>
+                    <input id="name" className="submit-textinput" placeholder="지원자 본인의 이름을 입력해주세요."></input>
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">2. 지원자의 학번을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
-                <Col xs={12} md={8}>
-                    <input id="studentid" className="submit-textarea" placeholder="ex) 2021234567"></input>
+                <Col xs={11} md={7}>
+                    <input id="studentid" className="submit-textinput" placeholder="ex) 2021134567"></input>
                 </Col>
 
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">3. 지원자의 학년을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
-                <Col xs={12} md={8}>
-                    <input id="grade" className="submit-textarea" placeholder="1학년"></input>
+                <Col xs={11} md={7}>
+                    <input id="grade" className="submit-textinput" placeholder="1학년"></input>
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">4. 지원자의 소속 학과를 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <input
                         id="Department"
-                        className="submit-textarea"
+                        className="submit-textinput"
                         placeholder="지원자 본인의 소속학과를 입력해주세요. (부/복수전공시 주전공과 구분하여 적어주세요.)"></input>
 
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">5. 지원자의 핸드폰 번호를 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
-                <Col xs={12} md={8}>
-                    <input id="phone" className="submit-textarea" placeholder="ex) 010-1234-5678"></input>
+                <Col xs={11} md={7}>
+                    <input id="phone" className="submit-textinput" placeholder="ex) 010-1134-5677"></input>
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">6. 지원자의 이메일을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
-                <Col xs={12} md={8}>
-                    <input id="email" className="submit-textarea" placeholder="KimMutSa@naver.com"></input>
+                <Col xs={11} md={7}>
+                    <input id="email" className="submit-textinput" placeholder="KimMutSa@naver.com"></input>
                 </Col>
-                <Col xs={12} md={8}>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">7. 다양한 IT동아리 중에서 멋쟁이사자처럼 대학 10기를 선택하고 지원하시게 된 이유를 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
-                <Col xs={12} md={8}>
-                    <textarea id="content" className="submit-textarea7" placeholder="지원동기 및 내용"></textarea>
+                <Col xs={11} md={7}>
+                    <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용"></textarea>
                 </Col>
 
-                <Col md={12}>
+                <Col md={11}>
                     <div className="CheckBoxContainer">
                         <input
                             type="checkbox"
@@ -177,7 +177,7 @@ function Submit() {
 
                     </div>
                 </Col>
-                <Col md={12}>
+                <Col md={11}>
                     <div>
                         <button
                             disabled={disable}
