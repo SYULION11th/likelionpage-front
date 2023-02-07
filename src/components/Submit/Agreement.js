@@ -1,6 +1,5 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
-import CompleteCheck from "../../Assets/complete-check.png";
 
 function scrollToTop() {
   window.scroll({
