@@ -1,11 +1,9 @@
 import React from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import axios from "axios";
-import { useNavigate } from 'react-router-dom';
-
+import {useNavigate} from 'react-router-dom';
 
 var isSubmit = false;
-
 
 function TextInput() {
 
@@ -63,15 +61,15 @@ function GoComplete(navigate) {
 
     setTimeout(function () {
         if (isSubmit === true) {
-          navigate("/Submit/SubmitComplete/");
+            navigate("/Submit/SubmitComplete/");
         }
 
     }, 2000);
 }
 
 function Submit() {
-  const navigate = useNavigate(); 
-  console.log(navigate);
+    const navigate = useNavigate();
+    console.log(navigate);
     return (
         <Container fluid="fluid" className="p-0">
             <Row style={{

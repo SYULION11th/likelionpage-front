@@ -59,9 +59,7 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 900
-                        ? "scroll-section-blur"
-                        : "noscroll-section-blur"}
+                    
                     style={{
                         backgroundImage: "url(img/study-background.png)",
                         backgroundRepeat: "no-repeat",
@@ -72,16 +70,12 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 1550
-                        ? "scroll-section-blur"
-                        : "noscroll-section-blur"}>
+                    >
                     <Main3/>
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 2300
-                        ? "scroll-section-blur"
-                        : "noscroll-section-blur"}
+                    
                     style={{
                         backgroundColor: "#015CCC"
                     }}>
@@ -89,14 +83,12 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 3200
-                        ? "scroll-section-blur"
-                        : "noscroll-section-blur"}>
+                    >
                     <Main5/>
                 </Col>
                 <Col
                     md={12}
-                    className={scrollPosition > 3700 ? "scroll-section-blur" : "noscroll-section-blur"}
+                    
                     style={{
                         backgroundImage: "url(img/lion-background.png)",
                         backgroundRepeat: "no-repeat",
