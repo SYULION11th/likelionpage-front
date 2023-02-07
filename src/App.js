@@ -5,6 +5,7 @@ import Notice from './components/Notice/Notice';
 import Question from './components/Question/Question';
 import Submit from './components/Submit/Submit';
 import SubmitComplete from './components/Submit/SubmitComplete';
+import Agreement from './components/Submit/Agreement';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Question" element={<Question />} />
           <Route path="/Submit" element={<Submit />} />
           <Route path="/Submit/SubmitComplete" element={<SubmitComplete />} />
+          <Route path="/Submit/Agreement" element={<Agreement />} />
           <Route path="/Login" element={<Notice />} />
         </Routes>
       </div>

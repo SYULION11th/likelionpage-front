@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import axios from "axios";
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom';
 
 var isSubmit = false;
 
@@ -69,7 +69,8 @@ function GoComplete(navigate) {
 
 function Submit() {
     const navigate = useNavigate();
-    console.log(navigate);
+    const [disable, setDisable] = useState(true);
+
     return (
         <Container fluid="fluid" className="p-0">
             <Row style={{
@@ -113,8 +114,37 @@ function Submit() {
                     <textarea id="content" className="submit-textarea7" placeholder="지원동기 및 내용"></textarea>
                 </Col>
                 <Col md={12}>
+                    <div className="CheckBoxContainer">
+                        <input
+                            type="checkbox"
+                            id="check"
+                            name="check"
+                            value="check"
+                            onChange={() => {
+                                setDisable(!disable);
+                            }}/>
+                        <label
+                            for="check"
+                            style={{
+                                marginLeft: "10px"
+                            }}>개인정보 수집 및 이용에 동의합니다.</label>
+                        <Link
+                            className=""
+                            as={Link}
+                            to="/Submit/Agreement"
+                            style={{
+                                marginLeft: "20px",
+                                textDecoration: "none",
+                                color: "white"
+                            }}>
+                            자세히 보기
+                        </Link>
+                    </div>
+                </Col>
+                <Col md={12}>
                     <div>
                         <button
+                            disabled={disable}
                             type="button"
                             className="post PostButton"
                             onClick={() => {
@@ -126,6 +156,7 @@ function Submit() {
 
                     </div>
                 </Col>
+
             </Row>
         </Container>
     );
