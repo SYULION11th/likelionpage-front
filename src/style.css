@@ -881,7 +881,7 @@ body {
     font-weight: 700;
     border-radius: 10px;
     border: none;
-    box-shadow: 0 0 0 1px #0B63CE;
+    box-shadow: 0 0 0 2px #0B63CE;
     background-color: #0B63CE;
     color: white;
     transition: all 0.5s ease-in-out;
@@ -890,6 +890,11 @@ body {
 .PostButton:hover {
     background-color: #0B63CE;
     box-shadow: 0 0 0 2px #ebebeb;
+}
+.PostButton:disabled {
+    background-color: #3c6ea7;
+    box-shadow: 0 0 0 2px #3c6ea7;
+    color: white;
 }
 
 @media (max-width: 768px) {
