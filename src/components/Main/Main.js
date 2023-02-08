@@ -35,7 +35,7 @@ function Main() {
                         backgroundRepeat: "no-repeat",
                         backgroundPosition: "center",
                         backgroundSize: "cover",
-                        filter: "brightness(0.4)"
+                        filter: "brightness(0.6)"
                     }}></Col>
 
                 <Col md={12}>

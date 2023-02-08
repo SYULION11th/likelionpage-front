@@ -78,7 +78,6 @@ function Submit() {
             className="p-0"
             style={{
                 backgroundColor: "#0A3479",
-                minHeight: "300vh"
             }}>
             <Row style={{
                     justifyContent: "center"
@@ -149,7 +148,7 @@ function Submit() {
                     <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용"></textarea>
                 </Col>
 
-                <Col md={11}>
+                <Col md={12}>
                     <div className="CheckBoxContainer">
                         <input
                             type="checkbox"
@@ -177,7 +176,7 @@ function Submit() {
 
                     </div>
                 </Col>
-                <Col md={11}>
+                <Col md={12}>
                     <div>
                         <button
                             disabled={disable}

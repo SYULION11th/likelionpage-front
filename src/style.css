@@ -189,8 +189,6 @@ body {
     }
 }
 
-
-
 .MainTitle {
     position: absolute;
     top: 40%;
@@ -240,18 +238,17 @@ body {
 @media (max-width: 767px) {
     .MainTitle {
         width: 90%;
-        font-size: 1.4rem !important;
+        font-size: 1.3rem !important;
         top: 40%;
     }
-}
-
-@media (max-width: 767px) {
     .MainButton {
         width: 60%;
         font-size: 1.2rem !important;
         top: 70%;
     }
 }
+
+
 
 /* --------- */
 /* TypeWriter */
@@ -260,25 +257,19 @@ body {
 .typeBox {
     position: absolute;
     top: 25%;
-    left: 50%;
+    left: 50.4%;
     transform: translate(-50%, -50%);
-    width: 38%;
-    color: white;
-    font-family: 'NotoSans-Bd';
-    font-weight: bold;
+    width: 100%;
     z-index: 1;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
     margin-top: 10px;
     margin-bottom: 5%;
-
+    font-size: 3em !important;
 }
 
 @media (min-width: 1550px) {
     .typeBox {
-        left: 52%;
-        font-size: 1.40rem;
-        width: 36%;
+        width: 100%;
+        font-size: 3.5em !important;
     }
 }
 
@@ -286,33 +277,35 @@ body {
     width: 100%;
     text-align: left;
     max-height: 2%;
+    text-align: center;
+
 }
 .Typewriter__wrapper {
-    font-size: 2.8em !important;
-    color: #ebebeb !important;
+    letter-spacing: 0.1rem;
+
+    color: white !important;
     font-weight: 600 !important;
     font-family: "NotoSans-Bd";
 }
 .Typewriter__cursor {
-    font-size: 2.8em !important;
-    color: #ebebeb !important;
+
+    color: white !important;
+    font-family: 'NotoSans-Bd';
+
 }
+
 
 @media (max-width: 767px) {
     .typeBox {
-        width: 80%;
-        margin-left: 3%;
+        width: 100%;
         top: 25%;
-    }
-}
-
-@media (max-width: 767px) {
-    .Typewriter__wrapper {
         font-size: 1.5em !important;
+
+    }
+    .Typewriter__wrapper {
         font-weight: 500 !important;
     }
     .Typewriter__cursor {
-        font-size: 1.3em !important;
         font-weight: 500 !important;
     }
 }
@@ -355,7 +348,6 @@ body {
         text-align: center;
     }
 }
-
 
 .logo-title {
     margin-top: 20px;
@@ -639,45 +631,34 @@ body {
 /*  Submit */
 /* --------- */
 .SubmitTitleBox {
+    margin-top: 100px;
     width: 100%;
-    height: 120px;
+    height: 160px;
     display: block;
 }
 .SubmitTitle {
     color: white;
-    width: 80%;
+    width: 100%;
     font-size: 1.6em;
     font-weight: 600;
-    margin-bottom: 5%;
     text-align: center;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+
 }
 
 .SubmitLine {
     width: 46px;
     height: 0;
-    left: 50%;
-    top: 24%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    margin:auto;
     border: 1px solid #FFFFFF;
 }
 
 .SubmitSubTitle {
     color: white;
-    width: 80%;
+    width: 100%;
     font-size: 1em;
     font-weight: 400;
-    margin-top: 1%;
-    margin-bottom: 5%;
+    margin-top: 30px;
     text-align: center;
-    left: 50%;
-    top: 26%;
-    transform: translate(-50%, -50%);
-    position: absolute;
 }
 
 @media (max-width: 768px) {
@@ -705,19 +686,18 @@ body {
 }
 
 .BreakLine {
-    margin-top: -65px;
+    margin-top: -64px;
     width: 130px;
     height: 0;
-    border: 0.8px solid #FFFFFF;
+    border: 0.6px solid #FFFFFF;
 }
 
 .submit-textinput {
     margin: auto;
     width: 100%;
-    height: 5%;
+    height: 10%;
     max-height: 80%;
-    display: block;
-    padding: 1em;
+    padding: 1.2em;
     margin-top: 1em;
     text-align: left;
     font-size: 15px;
@@ -730,7 +710,7 @@ body {
 
 .submit-textarea {
     width: 100%;
-    height: 300%;
+    height: 400px;
     max-height: 500%;
     display: block;
     margin-top: 1em;
@@ -747,25 +727,19 @@ body {
 .CheckBoxContainer {
     width: 100%;
     height: 5%;
-    left: 50%;
-    top: 260%;
-    transform: translate(-50%, -50%);
-    position: absolute;
     display: block;
     text-align: center;
     font-size: 17px;
     font-weight: 500;
     color: white;
+    padding: 3em;
 }
 
 
 .PostButton {
-    width: 40%;
+    width: 24%;
+    margin:auto;
     height: 10%;
-    left: 50%;
-    top: 270%;
-    transform: translate(-50%, -50%);
-
     display: block;
     text-align: center;
     font-size: 30px;
@@ -776,7 +750,7 @@ body {
     background-color: #0B63CE;
     color: white;
     transition: all 0.5s ease-in-out;
-    position: absolute;
+    margin-bottom: 100px;
 }
 .PostButton:hover {
     background-color: #0B63CE;
@@ -881,7 +855,6 @@ body {
     z-index: 1;
     overflow-y:scroll;
 }
-
 /* --------- */
 /*  Footer */
 /* --------- */
@@ -963,7 +936,6 @@ body {
         transition: all 0.8s cubic-bezier(.57,.08,.38,.97);
     }
 }
-
 
 @media (min-width: 1550px) {
     .scroll-section-move {
