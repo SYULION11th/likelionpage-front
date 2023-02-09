@@ -31,8 +31,8 @@ function TextInput() {
 
     axios
         .post(
-            "https://port-0-likelionpage-back-1jx7m2gldjq756s.gksl2.cloudtype.app/api/jungb" +
-                    "o/",
+            "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungbo/",
+                    
             {
                 name: getName,
                 Department: Department,
@@ -145,7 +145,8 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용"></textarea>
+                    <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용">
+                    </textarea>
                 </Col>
 
                 <Col md={12}>
@@ -159,7 +160,7 @@ function Submit() {
                                 setDisable(!disable);
                             }}/>
                         <label
-                            for="check"
+                            htmlFor="check"
                             style={{
                                 marginLeft: "10px"
                             }}>개인정보 수집 및 이용에 동의합니다.</label>
