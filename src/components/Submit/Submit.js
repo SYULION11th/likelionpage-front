@@ -33,6 +33,7 @@ function TextInput() {
         .post(
             "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungbo/",
                     
+            
             {
                 name: getName,
                 Department: Department,
