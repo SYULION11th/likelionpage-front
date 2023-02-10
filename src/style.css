@@ -769,46 +769,6 @@ body {
     }
 }
 
-/* --------- */
-/*  SubmitComplete */
-/* --------- */
-
-.SubmitCompleteBox {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-
-    padding: 2rem;
-
-    width: 70%;
-    height: 25%;
-    background: #F9F9F9;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
-    border-radius: 155px;
-}
-
-.submit-check-img {
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-
-    width: 70px;
-    height: 70px;
-}
-
-.SubmitCompleteTitle {
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
-
-    font-size: 1.4rem;
-    font-weight: 700;
-    text-align: center;
-    color: black;
-}
 
 /* --------- */
 /*  Agreement */
@@ -855,6 +815,68 @@ body {
     z-index: 1;
     overflow-y:scroll;
 }
+
+
+
+/* --------- */
+/*  SubmitComplete */
+/* --------- */
+
+.SubmitCompleteBox {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+
+    padding: 2rem;
+
+    width: 70%;
+    height: 25%;
+    background: #F9F9F9;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 155px;
+}
+
+.submit-check-img {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    height: 70px;
+}
+
+.SubmitCompleteTitle {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .SubmitCompleteBox {
+        width: 80%;
+        height: 15%;
+        padding: 0rem;
+    }
+
+    .submit-check-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .SubmitCompleteTitle {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+}
+
 /* --------- */
 /*  Footer */
 /* --------- */
