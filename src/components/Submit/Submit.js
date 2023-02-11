@@ -28,12 +28,21 @@ function TextInput() {
     var content = document
         .getElementById("content")
         .value;
+    var track = document
+        .getElementById("track")
+        .value;
+    var cooperation = document
+        .getElementById("cooperation")
+        .value;
+    var spend_time = document
+        .getElementById("spend_time")
+        .value;
 
     axios
         .post(
-            "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungbo/",
-                    
-            
+            "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
+                    "o/",
+
             {
                 name: getName,
                 Department: Department,
@@ -41,7 +50,10 @@ function TextInput() {
                 grade: grade,
                 phone: phone,
                 email: email,
-                content: content
+                content: content,
+                track: track,
+                cooperation: cooperation,
+                spend_time: spend_time
             }
         )
         .then(function (response) {
@@ -78,7 +90,7 @@ function Submit() {
             fluid="fluid"
             className="p-0"
             style={{
-                backgroundColor: "#0A3479",
+                backgroundColor: "#0A3479"
             }}>
             <Row style={{
                     justifyContent: "center"
@@ -142,12 +154,39 @@ function Submit() {
                     <input id="email" className="submit-textinput" placeholder="KimMutSa@naver.com"></input>
                 </Col>
                 <Col xs={11} md={7}>
+                    <p className="SubmitQuestion">7. 멋쟁이사자처럼 대학 10기부터 기초 개발 스터디는 동일하게 진행되지만 이후에
+                        기획/디자인 파트와 개발 파트 중 선택하여 진행하게 됩니다. 어느 파트에 지원하시나요?
+                    </p>
+                    <div className="BreakLine"></div>
+                </Col>
+                <Col xs={11} md={7}>
+                    <input
+                        id="track"
+                        className="submit-textinput"
+                        placeholder="기획/디자인, 프론트엔드, 백엔드 중 택1"></input>
+                </Col>
+                <Col xs={11} md={7}>
                     <p className="SubmitQuestion">7. 다양한 IT동아리 중에서 멋쟁이사자처럼 대학 10기를 선택하고 지원하시게 된 이유를 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용">
-                    </textarea>
+                    <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용"></textarea>
+                </Col>
+                <Col xs={11} md={7}>
+                    <p className="SubmitQuestion">8. 멋쟁이사자처럼 대학은 협업과 팀워크를 중요한 가치로 생각하는 공동체입니다. 지원자
+                        본인이 협업과 팀워크를 진행해보았던 경험과, 그 경험을 멋쟁이사자처럼 대학에 어떻게 적용시킬 수 있을지 작성해주세요. (500자 이내)</p>
+                    <div className="BreakLine"></div>
+                </Col>
+                <Col xs={11} md={7}>
+                    <textarea id="cooperation" className="submit-textarea" placeholder=""></textarea>
+                </Col>
+                <Col xs={11} md={7}>
+                    <p className="SubmitQuestion">9. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를 권장합니다.
+                        활동 기간동안 얼마나 열정적으로, 매주 얼만큼의 시간을 할애하실 수 있는지 작성해주세요. (500자 이내)</p>
+                    <div className="BreakLine"></div>
+                </Col>
+                <Col xs={11} md={7}>
+                    <textarea id="spend_time" className="submit-textarea" placeholder=""></textarea>
                 </Col>
 
                 <Col md={12}>

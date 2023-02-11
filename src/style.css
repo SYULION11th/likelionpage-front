@@ -686,7 +686,7 @@ body {
 }
 
 .BreakLine {
-    margin-top: -64px;
+    margin-top: -55px;
     width: 130px;
     height: 0;
     border: 0.6px solid #FFFFFF;
@@ -788,12 +788,12 @@ body {
 .exitButton {
     position: fixed;
     top: 15%;
-    right: 3%;
+    right: 4%;
     z-index: 1000;
     color: #ebebeb;
     background: none;
     font-size: 2em;
-    font-weight: 300;
+    font-weight: 600;
     cursor: pointer;
     border: none;
 }

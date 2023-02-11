@@ -22,7 +22,7 @@ function Question() {
             fontSize: "50px",
             fontWeight: "bold",
           
-          }}>서비스 준비중 입니다.</h1>
+          }}>서비스 준비중입니다.</h1>
         </Col>
       </Row>
     </Container>
