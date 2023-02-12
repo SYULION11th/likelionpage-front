@@ -103,9 +103,7 @@ function Submit() {
                             POSSIBILITY TO REALITY. 멋사와 함께 가능성을 현실로.
                         </p>
                     </div>
-
                 </Col>
-
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">1. 지원자의 성함을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
@@ -120,7 +118,6 @@ function Submit() {
                 <Col xs={11} md={7}>
                     <input id="studentid" className="submit-textinput" placeholder="ex) 2021134567"></input>
                 </Col>
-
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">3. 지원자의 학년을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
@@ -137,7 +134,6 @@ function Submit() {
                         id="Department"
                         className="submit-textinput"
                         placeholder="지원자 본인의 소속학과를 입력해주세요. (부/복수전공시 주전공과 구분하여 적어주세요.)"></input>
-
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">5. 지원자의 핸드폰 번호를 입력해 주세요.</p>
@@ -166,14 +162,14 @@ function Submit() {
                         placeholder="기획/디자인, 프론트엔드, 백엔드 중 택1"></input>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">7. 다양한 IT동아리 중에서 멋쟁이사자처럼 대학 10기를 선택하고 지원하시게 된 이유를 작성해주세요. (500자 이내)</p>
+                    <p className="SubmitQuestion">8. 다양한 IT동아리 중에서 멋쟁이사자처럼 대학 10기를 선택하고 지원하시게 된 이유를 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
                     <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용"></textarea>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">8. 멋쟁이사자처럼 대학은 협업과 팀워크를 중요한 가치로 생각하는 공동체입니다. 지원자
+                    <p className="SubmitQuestion">9. 멋쟁이사자처럼 대학은 협업과 팀워크를 중요한 가치로 생각하는 공동체입니다. 지원자
                         본인이 협업과 팀워크를 진행해보았던 경험과, 그 경험을 멋쟁이사자처럼 대학에 어떻게 적용시킬 수 있을지 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
@@ -181,14 +177,13 @@ function Submit() {
                     <textarea id="cooperation" className="submit-textarea" placeholder=""></textarea>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">9. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를 권장합니다.
+                    <p className="SubmitQuestion">10. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를 권장합니다.
                         활동 기간동안 얼마나 열정적으로, 매주 얼만큼의 시간을 할애하실 수 있는지 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
                     <textarea id="spend_time" className="submit-textarea" placeholder=""></textarea>
                 </Col>
-
                 <Col md={12}>
                     <div className="CheckBoxContainer">
                         <input
@@ -214,7 +209,6 @@ function Submit() {
                             }}>
                             자세히 보기
                         </button>
-
                     </div>
                 </Col>
                 <Col md={12}>
@@ -229,7 +223,6 @@ function Submit() {
                             }}>
                             제출하기
                         </button>
-
                     </div>
                 </Col>
                 <div
@@ -243,48 +236,36 @@ function Submit() {
                         <p className="agreement-text">
                             [개인정보 수집·이용 동의서]
                             <br/><br/>
-
                             주식회사 멋쟁이 사자처럼은 「정보통신망 이용촉진 및 정보보호에 관한 법률」 및 「개인정보보호법」 등 관련 법령상의 개인정보보호 규정을 준수하여
-                            「22년 멋쟁이사자처럼 10기 모집」 참가자의 개인정보 및 권익을 보호하고, 개인정보와 관련한 참가자의 고충을 원활하게 처리할 수 있도록 다음과
+                            「23년 멋쟁이사자처럼 11기 모집」 참가자의 개인정보 및 권익을 보호하고, 개인정보와 관련한 참가자의 고충을 원활하게 처리할 수 있도록 다음과
                             같은 개인정보 처리방침을 두고 있습니다.
                             <br/><br/>
-
                             가. 개인 정보의 수집· 이용에 관한 사항
                             <br/><br/>
-
                             ▣ 개인 정보의 수집· 이용 목적 개인 정보는 1차적으로 본 프로그램 참가신청, 참가신청에 따른 본인확인, 개인식별, 프로그램 진행, 프로그램
                             관련 안내/고지사항 등의 전달, 문의사항 또는 불만사항 등의 확인 및 처리, 분쟁 조정을 위한 기록 보존 등을 위해 사용됩니다. 이후
                             멋쟁이사자처럼의 프로그램 및 브랜드 홍보를 위한 마케팅에 활용될 수 있습니다.
                             <br/><br/>
-
                             ▣ 수집하는 개인 정보의 항목 성명, 연락처, 이메일, 소속, 직업 등 신청 및 프로그램 운영 중 취득한 정보
                             <br/><br/>
-
                             ▣ 개인 정보의 보유· 이용기간 개인 정보는 원칙적으로 개인 정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 본 사업 종료 후
                             참여 인정 문서 발급을 위한 최소한의 자료(성명, 전화번호, 이메일)는 사업종료 이후 5년간 보존됩니다.
                             <br/><br/>
-
                             ▣ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익 위 개인 정보의 수집· 이용에 거부할 권리가 있음을 알려드립니다. 단, 수집항목은 사업
                             진행을 위한 최소한의 필수 정보로서 개인 정보 수집· 이용에 동의하지 않으실 경우 프로그램 참가 및 제반 활동이 불가능합니다.
                             <br/><br/>
-
                             나. 개인 정보 제3자 제공에 관한 사항
                             <br/><br/>
-
                             ▣ 제공받는 자 주식회사 멋쟁이사자처럼
                             <br/><br/>
-
-                            ▣ 제공받는 자의 목적 ‘22년 멋쟁이사자처럼 10기 모집’ 진행 및 운영, 참가자 관리, 마케팅 활용
+                            ▣ 제공받는 자의 목적 ‘23년 멋쟁이사자처럼 11기 모집’ 진행 및 운영, 참가자 관리, 마케팅 활용
                             <br/><br/>
-
                             ▣ 제공하는 개인 정보 항목 성명, 연락처, 이메일, 소속, 직업 등 신청 및 프로그램 운영 중 취득한 정보
                             <br/><br/>
-
                             ▣ 동의를 거부할 권리 및 동의를 거부할 경우의 불이익 위 제3자에 대한 개인 정보의 제공에 관한 동의를 거부할 수 있으나 본 프로그램 참가를
                             위해 필수적이므로 위 사항에 동의하셔야만 참가 및 활동이 가능합니다.
                         </p>
                     </div>
-
                     <button className="exitButton" onClick={() => setVisible(false)}>X</button>
                 </div>
             </Row>
