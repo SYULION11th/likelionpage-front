@@ -9,7 +9,7 @@ function QuestionButton(props) {
 
     return (
 
-        <Link className="QuestionButton" as={Link} to="/Question" onClick={scrollToTop}>
+        <Link className="QuestionButton" as={Link} to="/Question/" onClick={scrollToTop}>
             <br></br>
             11기 모집 관련 질문하기
         </Link>

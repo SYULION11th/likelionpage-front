@@ -3,15 +3,20 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Main from './components/Main/Main';
 import Notice from './components/Notice/Notice';
 import Question from './components/Question/Question';
+import Question2 from './components/Question/Question2';
+import QuestionWrite from './components/Question/Write';
+import Page1 from './components/Question/Page1';
+import Page2 from './components/Question/Page2';
+import Page3 from './components/Question/Page3';
+import Page4 from './components/Question/Page4';
+import Page5 from './components/Question/Page5';
 import Submit from './components/Submit/Submit';
 import SubmitComplete from './components/Submit/SubmitComplete';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./style.css"
+import "./style.css";
 import ScrollTop from "./components/ScrollTop.js"
-
-
 import './App.css';
 
 function App() {
@@ -26,6 +31,12 @@ function App() {
           <Route path="/Submit" element={<Submit />} />
           <Route path="/Submit/SubmitComplete" element={<SubmitComplete />} />
           <Route path="/Login" element={<Notice />} />
+          <Route path="/Page1" element={<Page1 />} />
+          <Route path="/Page2" element={<Page2 />} />
+          <Route path="/Page3" element={<Page3 />} />
+          <Route path="/Page4" element={<Page4 />} />
+          <Route path="/Page5" element={<Page5 />} />
+          
         </Routes>
       </div>
       <ScrollTop/>
