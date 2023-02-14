@@ -1,16 +1,15 @@
 import { Container, Row, Col } from "react-bootstrap";
-import logo from "../../Assets/logo.png"
-import Q from "../../Assets/Q.png"
 import './Question.css'
 import './Write.js'
 import './Media.css';
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+
+const url = "https://pf.kakao.com/_DfxbkK"
 
 
 //함수1
 function Question() {
+
 
   return (
     <Container fluid="fluid" className="p-0">
@@ -66,9 +65,9 @@ function Question() {
             </div>
 
             <div className="bt_wrap">
-                 <Link className="QButton"style={{textDecoration:"none", color:"#E0E0E0"}} as={Link} to="https://pf.kakao.com/_DfxbkK">
+                <button className="QButton" style={{textDecoration:"none", color:"#E0E0E0"}} onClick={()=>{window.open(url)}} >
                   질문하기
-                </Link>
+                </button>
               </div>
             
           <div className="board_page">

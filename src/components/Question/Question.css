@@ -78,12 +78,8 @@
 .board_list > div.top {
     display: flex;
 
-   
 }
 
-.board_list > div:last-child {
-
-}
 
 .board_list > div > div {
     width: 100%;
