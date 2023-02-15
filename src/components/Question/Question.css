@@ -124,8 +124,13 @@
     text-align: center;
 }
 
+.bt_wrap{
+    margin-top: 0;
+}
+
 
 .board_page {
+    position: relative;
     text-align: center;
     font-size: 0;
     text-decoration: none;
@@ -162,4 +167,26 @@
 
 .board_page a.num.on:first-child{
     margin-top: -10px;
+}
+
+
+.board_page{
+    display: flex;
+    margin-top: 5%;
+    font-size: 0;
+    padding: 0;
+
+}
+
+.board_page .num{
+    margin-left: 45%;
+}
+
+.board_page .QButton{
+    background-color: #0B3479;
+    display: block;
+    height: 40px;
+    margin-left: 37%;
+    border-color: #0B3479;
+    
 }

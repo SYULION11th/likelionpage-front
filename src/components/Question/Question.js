@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import './Question.css'
 import './Write.js'
 import './Media.css';
+import './Media2.css';
 import { Link } from "react-router-dom";
 
 const url = "https://pf.kakao.com/_DfxbkK"
@@ -20,10 +21,10 @@ function Question() {
               멋쟁이사자처럼 삼육대학교 Q&A
             </div>
             <div className="line1">
-            </div>
-            <div className="textbox2">
+            </div> 
+              <div className="textbox2">
               무엇이든 물어보세요. 삼육대학교 멋사운영진들이 직접 답합니다.
-            </div>
+            </div> 
           </div>
         </Col>
 
@@ -64,11 +65,7 @@ function Question() {
             </div>
             </div>
 
-            <div className="bt_wrap">
-                <button className="QButton" style={{textDecoration:"none", color:"#E0E0E0"}} onClick={()=>{window.open(url)}} >
-                  질문하기
-                </button>
-              </div>
+        
             
           <div className="board_page">
             <Link className="num" style={{textDecoration:"none", color:"#000"}} as={Link} to="/Question/">1</Link>
@@ -76,7 +73,13 @@ function Question() {
             <Link className="num" style={{textDecoration:"none", color:"#000"}} as={Link} to="/Question/3">3</Link>
             <Link className="num" style={{textDecoration:"none", color:"#000"}} as={Link} to="/Question/4">4</Link>
             <Link className="num" style={{textDecoration:"none", color:"#000"}} as={Link} to="/Question/5">5</Link> */}
-          </div>
+             
+          
+                <button className="QButton" style={{textDecoration:"none", color:"#E0E0E0"}} onClick={()=>{window.open(url)}} >
+                  질문하기
+                </button>
+       </div>
+
         </Col>
       </Row>
     </Container>
