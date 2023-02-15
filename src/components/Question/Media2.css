@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 515px) {
     .board_wrap {
         width: 100%;
         min-width: 320px;
@@ -6,12 +6,41 @@
         box-sizing: border-box;
     }
 
+    .titleWrap{
+        height:200px;
+    }
+
+    .textbox1{
+        padding: 0;
+        font-size: 1.8rem;
+    }
+
+    .textbox2{
+        font-size: 1.1rem;
+        padding-top: 10px;
+    }
+
+    .line1{
+        font-size: 1.4rem;
+    }
+
+    .board_page{
+        padding-top: 150px;
+    }
+
+    .qnatext{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+ 
+
     .board_list{
         margin: 0;
         font-size: 0;
         height: 400px;
     }
-
 
 
     .board_list .num,
