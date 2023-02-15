@@ -5,7 +5,7 @@ import {useNavigate} from 'react-router-dom';
 
 var isSubmit = false;
 
-function TextInput() {
+function TextInput(notebook, part, session) {
 
     var getName = document
         .getElementById("name")
@@ -37,10 +37,14 @@ function TextInput() {
     var spend_time = document
         .getElementById("spend_time")
         .value;
+    var portfolio = document
+        .getElementById("portfolio")
+        .value;
 
     axios
         .post(
-            "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungbo/",
+            "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
+                    "o/",
 
             {
                 name: getName,
@@ -52,7 +56,11 @@ function TextInput() {
                 content: content,
                 track: track,
                 cooperation: cooperation,
-                spend_time: spend_time
+                spend_time: spend_time,
+                notebook: notebook,
+                github: portfolio,
+                my_track: part,
+                session: session
             }
         )
         .then(function (response) {
@@ -83,6 +91,9 @@ function Submit() {
     const navigate = useNavigate();
     const [disable, setDisable] = useState(true);
     const [visible, setVisible] = useState(false);
+    const [notebook, setNotebook] = useState('');
+    const [part, setPart] = useState('');
+    const [session, setSession] = useState('');
 
     return (
         <Container
@@ -141,6 +152,7 @@ function Submit() {
                 <Col xs={11} md={7}>
                     <input id="phone" className="submit-textinput" placeholder="ex) 010-1134-5677"></input>
                 </Col>
+
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">6. 지원자의 이메일을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
@@ -149,26 +161,79 @@ function Submit() {
                     <input id="email" className="submit-textinput" placeholder="KimMutSa@naver.com"></input>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">7. 멋쟁이사자처럼 대학 10기부터 기초 개발 스터디는 동일하게 진행되지만 이후에
-                        기획/디자인 파트와 개발 파트 중 선택하여 진행하게 됩니다. 어느 파트에 지원하시나요?
-                    </p>
+                    <p className="SubmitQuestion">7. 노트북 소지 여부를 선택해주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <input
-                        id="track"
-                        className="submit-textinput"
-                        placeholder="기획/디자인, 프론트엔드, 백엔드 중 택1"></input>
+                    <div className="SubmitRadioBox">
+                        <input
+                            type="radio"
+                            name="notebookTrue"
+                            id="notebookTrue"
+                            value="True"
+                            checked={notebook === 'True'}
+                            onChange={() => setNotebook('True')}
+                            className="submit-radio"></input>
+                        <label for="notebookTrue">소지</label>
+                        <input
+                            type="radio"
+                            name="notebookFalse"
+                            id="notebookFalse"
+                            value="True"
+                            checked={notebook === 'False'}
+                            onChange={() => setNotebook('False')}
+                            className="submit-radio"></input>
+                        <label for="notebookFalse">미소지</label>
+                    </div>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">8. 다양한 IT동아리 중에서 멋쟁이사자처럼 대학 10기를 선택하고 지원하시게 된 이유를 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea id="content" className="submit-textarea" placeholder="지원동기 및 내용"></textarea>
+                    <textarea id="content" className="submit-textarea" placeholder=""></textarea>
+                </Col>
+
+                <Col xs={11} md={7}>
+                    <p className="SubmitQuestion">9. 멋쟁이사자처럼 대학 10기부터 기초 개발 스터디는 동일하게 진행되지만 이후에
+                        기획/디자인 파트와 개발 파트 중 선택하여 진행하게 됩니다. 어느 파트에 지원하시나요?
+                    </p>
+                    <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">9. 멋쟁이사자처럼 대학은 협업과 팀워크를 중요한 가치로 생각하는 공동체입니다. 지원자
+                    <div className="SubmitRadioBox">
+                        <input
+                            type="radio"
+                            name="Design"
+                            id="Design"
+                            value="True"
+                            checked={part === 'Design'}
+                            onChange={() => setPart('Design')}
+                            className="submit-radio"></input>
+                        <label for="Design">기획/디자인</label>
+                        <input
+                            type="radio"
+                            name="Development"
+                            id="Development"
+                            value="True"
+                            checked={part === 'Development'}
+                            onChange={() => setPart('Development')}
+                            className="submit-radio"></input>
+                        <label for="Development">개발</label>
+                    </div>
+                </Col>
+
+                <Col xs={11} md={7}>
+                    <p className="SubmitQuestion">9-1. 위의 파트를 선택한 이유와 관련 경험을 해본 적이 있는지, 그리고 이 파트를 통해
+                        어떠한 성장을 희망하시는지 작성해주세요. (500자 이내)</p>
+                    <div className="BreakLine"></div>
+                </Col>
+                <Col xs={11} md={7}>
+                    <textarea id="track" className="submit-textarea" placeholder=""></textarea>
+                </Col>
+
+                <Col xs={11} md={7}>
+                    <p className="SubmitQuestion">10. 멋쟁이사자처럼 대학은 협업과 팀워크를 중요한 가치로 생각하는 공동체입니다. 지원자
                         본인이 협업과 팀워크를 진행해보았던 경험과, 그 경험을 멋쟁이사자처럼 대학에 어떻게 적용시킬 수 있을지 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
@@ -176,13 +241,57 @@ function Submit() {
                     <textarea id="cooperation" className="submit-textarea" placeholder=""></textarea>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">10. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를 권장합니다.
-                        활동 기간동안 얼마나 열정적으로, 매주 얼만큼의 시간을 할애하실 수 있는지 작성해주세요. (500자 이내)</p>
+                    <p className="SubmitQuestion">11. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를
+                        권장합니다. 활동 기간동안 얼마나 열정적으로, 매주 얼만큼의 시간을 할애하실 수 있는지 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
                     <textarea id="spend_time" className="submit-textarea" placeholder=""></textarea>
                 </Col>
+               
+
+                <Col xs={11} md={7}>
+                    <p className="SubmitQuestion-0">11-1. 멋쟁이사자처럼 정기세션은 매주 목요일 17시에 진행됩니다. 매주 참석 가능하신지
+참석 여부를 선택해주세요. (세션시간 약 2시간)
+                    </p>
+                    <p className="SubmitQuestion-1">* 세션 진행 시간은 추후에 변경될 수 있습니다.
+</p>
+                    <div className="BreakLine"></div>
+                </Col>
+                <Col xs={11} md={7}>
+                    <div className="SubmitRadioBox">
+                        <input
+                            type="radio"
+                            name="Session"
+                            id="Session"
+                            value="True"
+                            checked={session === '참석가능'}
+                            onChange={() => setSession('참석가능')}
+                            className="submit-radio"></input>
+                        <label for="Session">참석 가능</label>
+                        <input
+                            type="radio"
+                            name="Session"
+                            id="Session"
+                            value="True"
+                            checked={session === '참석가능'}
+                            onChange={() => setSession('참석가능')}
+                            className="submit-radio"></input>
+                        <label for="Session">참석 불가능</label>
+                    </div>
+                </Col>
+
+
+
+
+                <Col xs={11} md={7}>
+                    <p className="SubmitQuestion">12. 본인의 Github나 디자인 포트폴리오가 있다면 링크를 첨부해주세요.</p>
+                    <div className="BreakLine"></div>
+                </Col>
+                <Col xs={11} md={7}>
+                    <input id="portfolio" className="submit-textinput" placeholder="https://github.com/SYULION11th"></input>
+                </Col>
+
                 <Col md={12}>
                     <div className="CheckBoxContainer">
                         <input
@@ -217,7 +326,7 @@ function Submit() {
                             type="button"
                             className="post PostButton"
                             onClick={() => {
-                                TextInput();
+                                TextInput(notebook, part, session);
                                 GoComplete(navigate);
                             }}>
                             제출하기

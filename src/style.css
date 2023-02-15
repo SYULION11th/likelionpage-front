@@ -674,14 +674,47 @@ body {
 
 .SubmitQuestion {
     margin-top: 1em;
-    padding: 3em;
-    padding-left: 0em;
+    padding: 3em 0em;
     text-align: left;
     font-size: 16px;
     font-weight: 500;
     transition: all 0.5s ease-in-out;
     border-radius: 10px;
     border: none;
+    color: white;
+}
+
+.SubmitQuestion-0 {
+    margin-top: 1em;
+    padding-top: 3em;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.SubmitQuestion-1 {
+    margin-top: 0em;
+    padding-bottom: 3em;
+
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.SubmitRadioBox {
+    margin-top: 1em;
+    padding: 0.5em 0em;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
     color: white;
 }
 
@@ -723,7 +756,10 @@ body {
     border: none;
 }
 
-
+.submit-radio {
+    margin-left: 1em;
+    margin-right: 0.3em;
+}
 .CheckBoxContainer {
     width: 100%;
     height: 5%;
