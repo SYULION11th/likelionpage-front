@@ -171,8 +171,8 @@ function Submit() {
                             name="notebookTrue"
                             id="notebookTrue"
                             value="True"
-                            checked={notebook === 'True'}
-                            onChange={() => setNotebook('True')}
+                            checked={notebook === '소지'}
+                            onChange={() => setNotebook('소지')}
                             className="submit-radio"></input>
                         <label for="notebookTrue">소지</label>
                         <input
@@ -180,8 +180,8 @@ function Submit() {
                             name="notebookFalse"
                             id="notebookFalse"
                             value="True"
-                            checked={notebook === 'False'}
-                            onChange={() => setNotebook('False')}
+                            checked={notebook === '미소지'}
+                            onChange={() => setNotebook('미소지')}
                             className="submit-radio"></input>
                         <label for="notebookFalse">미소지</label>
                     </div>
@@ -213,13 +213,22 @@ function Submit() {
                         <label for="Design">기획/디자인</label>
                         <input
                             type="radio"
-                            name="Development"
-                            id="Development"
+                            name="Frontend"
+                            id="Frontend"
                             value="True"
-                            checked={part === 'Development'}
-                            onChange={() => setPart('Development')}
+                            checked={part === 'Frontend'}
+                            onChange={() => setPart('Frontend')}
                             className="submit-radio"></input>
-                        <label for="Development">개발</label>
+                        <label for="Frontend">프론트엔드</label>
+                        <input
+                            type="radio"
+                            name="Backend"
+                            id="Backend"
+                            value="True"
+                            checked={part === 'Backend'}
+                            onChange={() => setPart('Backend')}
+                            className="submit-radio"></input>
+                        <label for="Backend">백엔드</label>
                     </div>
                 </Col>
 
@@ -262,22 +271,22 @@ function Submit() {
                     <div className="SubmitRadioBox">
                         <input
                             type="radio"
-                            name="Session"
-                            id="Session"
+                            name="SessionTrue"
+                            id="SessionTrue"
                             value="True"
                             checked={session === '참석가능'}
                             onChange={() => setSession('참석가능')}
                             className="submit-radio"></input>
-                        <label for="Session">참석 가능</label>
+                        <label for="SessionTrue">참석 가능</label>
                         <input
                             type="radio"
-                            name="Session"
-                            id="Session"
+                            name="SessionFalse"
+                            id="SessionFalse"
                             value="True"
-                            checked={session === '참석가능'}
-                            onChange={() => setSession('참석가능')}
+                            checked={session === '참석 불가능'}
+                            onChange={() => setSession('참석 불가능')}
                             className="submit-radio"></input>
-                        <label for="Session">참석 불가능</label>
+                        <label for="SessionFalse">참석 불가능</label>
                     </div>
                 </Col>
 
