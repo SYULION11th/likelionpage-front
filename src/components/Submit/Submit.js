@@ -286,7 +286,7 @@ function Submit() {
                             checked={session === '참석 불가능'}
                             onChange={() => setSession('참석 불가능')}
                             className="submit-radio"></input>
-                        <label for="SessionFalse">참석 불가능</label>
+                        <label for="SessionFalse">참석불가능</label>
                     </div>
                 </Col>
 
