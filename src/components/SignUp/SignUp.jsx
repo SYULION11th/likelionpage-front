@@ -70,7 +70,7 @@ export default function Login() {
     const handlePassword = (e) => {
         setPw(e.target.value);
         const regex = /^(?=.*[a-zA-z])(?=.*[0-9])(?=.*[$`~!@$!%*#^?&\\(\\)\-_=+])(?!.*[^a-zA-z0-9$`~!@$!%*#^?&\\(\\)\-_=+]).{8,20}$/;
-        if(regex.test(pw)) {
+        if(regex.test(e.target.value)) {
             setPwValid(true);
         }else {
             setPwValid(false);
@@ -135,7 +135,7 @@ export default function Login() {
                         type='password'
                         className="input" 
                         id= "password"
-                        placeholder="영문, 숫자, 특수문자 포함 10자 이상"
+                        placeholder="영문, 숫자, 특수문자 포함 8자 이상"
                         value={pw}
                         onChange={handlePassword}
                     />
@@ -143,7 +143,7 @@ export default function Login() {
                 <div className="errorMessageWrap" >
                     {
                         !pwValid && pw.length > 0 && (
-                            <div>영문, 숫자, 특수문자 포함 10자 이상 입력해주세요.</div>
+                            <div>영문, 숫자, 특수문자 포함 8자 이상 입력해주세요.</div>
                         )}
                 </div>
                 <div style={{marginTop:"26px"}} className="inputTitle">비밀번호 확인</div>
