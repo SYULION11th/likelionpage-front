@@ -4,11 +4,8 @@ function Main1() {
     return (
         <Container>
             <Row
-                style={{
-                    justifyContent: "center",
-                    paddingTop: "100px",
-                    paddingBottom: "100px"
-                }}>
+                className="Main1"
+>
                 <Col md={5}>
 
                     <div className="logo-box">
