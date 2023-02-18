@@ -5,11 +5,11 @@ import {useNavigate} from 'react-router-dom';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 var isSubmit = false;
+var Captcha = false;
+var is_checked = false;
 
 
-function onChange(value) {
-    console.log('Captcha value:', value);
-}
+
 
 function TextInput(notebook, part, session) {
 
@@ -101,6 +101,36 @@ function Submit() {
     const [part, setPart] = useState('');
     const [session, setSession] = useState('');
 
+
+    function onChange(value) {
+        if (value === null) {
+            Captcha = false;
+        }
+        else {
+            Captcha = true;
+        }
+        if (is_checked && Captcha){
+            setDisable(false);
+        }
+        else {
+            setDisable(true);
+        }
+    }
+    function isDisabled() {
+        // 1. checkbox element를 찾습니다.
+        const checkbox = document.getElementById('check');
+
+        // 2. checked 속성을 체크합니다.
+        is_checked = checkbox.checked;
+
+        if (is_checked && Captcha){
+            setDisable(false);
+        }
+        else {
+            setDisable(true);
+        }
+    }
+
     return (
         <Container
             fluid="fluid"
@@ -180,7 +210,7 @@ function Submit() {
                             checked={notebook === '소지'}
                             onChange={() => setNotebook('소지')}
                             className="submit-radio"></input>
-                        <label for="notebookTrue">소지</label>
+                        <label htmlFor="notebookTrue">소지</label>
                         <input
                             type="radio"
                             name="notebookFalse"
@@ -189,7 +219,7 @@ function Submit() {
                             checked={notebook === '미소지'}
                             onChange={() => setNotebook('미소지')}
                             className="submit-radio"></input>
-                        <label for="notebookFalse">미소지</label>
+                        <label htmlFor="notebookFalse">미소지</label>
                     </div>
                 </Col>
                 <Col xs={11} md={7}>
@@ -197,7 +227,7 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea maxlength="500" id="content" className="submit-textarea" placeholder="">
+                    <textarea maxLength="500" id="content" className="submit-textarea" placeholder="">
                     </textarea>
 
                 </Col>
@@ -218,7 +248,7 @@ function Submit() {
                             checked={part === '기획/디자인'}
                             onChange={() => setPart('기획/디자인')}
                             className="submit-radio"></input>
-                        <label for="Design">기획/디자인</label>
+                        <label htmlFor="Design">기획/디자인</label>
                         <input
                             type="radio"
                             name="Frontend"
@@ -227,7 +257,7 @@ function Submit() {
                             checked={part === '프론트엔드'}
                             onChange={() => setPart('프론트엔드')}
                             className="submit-radio"></input>
-                        <label for="Frontend">프론트엔드</label>
+                        <label htmlFor="Frontend">프론트엔드</label>
                         <input
                             type="radio"
                             name="Backend"
@@ -236,7 +266,7 @@ function Submit() {
                             checked={part === '백엔드'}
                             onChange={() => setPart('백엔드')}
                             className="submit-radio"></input>
-                        <label for="Backend">백엔드</label>
+                        <label htmlFor="Backend">백엔드</label>
                     </div>
                 </Col>
 
@@ -246,7 +276,7 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea maxlength="500" id="track" className="submit-textarea" placeholder=""></textarea>
+                    <textarea maxLength="500" id="track" className="submit-textarea" placeholder=""></textarea>
                 </Col>
 
                 <Col xs={11} md={7}>
@@ -255,7 +285,7 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea maxlength="500" id="cooperation" className="submit-textarea" placeholder=""></textarea>
+                    <textarea maxLength="500" id="cooperation" className="submit-textarea" placeholder=""></textarea>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">11. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를
@@ -263,7 +293,7 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea maxlength="500" id="spend_time" className="submit-textarea" placeholder=""></textarea>
+                    <textarea maxLength="500" id="spend_time" className="submit-textarea" placeholder=""></textarea>
                 </Col>
 
                 <Col xs={11} md={7}>
@@ -283,7 +313,7 @@ function Submit() {
                             checked={session === '참석가능'}
                             onChange={() => setSession('참석가능')}
                             className="submit-radio"></input>
-                        <label for="SessionTrue">참석 가능</label>
+                        <label htmlFor="SessionTrue">참석 가능</label>
                         <input
                             type="radio"
                             name="SessionFalse"
@@ -292,7 +322,7 @@ function Submit() {
                             checked={session === '참석불가능'}
                             onChange={() => setSession('참석불가능')}
                             className="submit-radio"></input>
-                        <label for="SessionFalse">참석불가능</label>
+                        <label htmlFor="SessionFalse">참석불가능</label>
                     </div>
                 </Col>
                 <Col xs={11} md={7}>
@@ -324,7 +354,7 @@ function Submit() {
                             name="check"
                             value="check"
                             onChange={() => {
-                                setDisable(!disable);
+                                isDisabled();
                             }}/>
                         <label
                             htmlFor="check"
