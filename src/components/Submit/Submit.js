@@ -6,6 +6,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 var isSubmit = false;
 
+
 function onChange(value) {
     console.log('Captcha value:', value);
 }
@@ -196,7 +197,9 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea id="content" className="submit-textarea" placeholder=""></textarea>
+                    <textarea maxlength="500" id="content" className="submit-textarea" placeholder="">
+                    </textarea>
+
                 </Col>
 
                 <Col xs={11} md={7}>
@@ -212,8 +215,8 @@ function Submit() {
                             name="Design"
                             id="Design"
                             value="True"
-                            checked={part === 'Design'}
-                            onChange={() => setPart('Design')}
+                            checked={part === '기획/디자인'}
+                            onChange={() => setPart('기획/디자인')}
                             className="submit-radio"></input>
                         <label for="Design">기획/디자인</label>
                         <input
@@ -243,7 +246,7 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea id="track" className="submit-textarea" placeholder=""></textarea>
+                    <textarea maxlength="500" id="track" className="submit-textarea" placeholder=""></textarea>
                 </Col>
 
                 <Col xs={11} md={7}>
@@ -252,7 +255,7 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea id="cooperation" className="submit-textarea" placeholder=""></textarea>
+                    <textarea maxlength="500" id="cooperation" className="submit-textarea" placeholder=""></textarea>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">11. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를
@@ -260,7 +263,7 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea id="spend_time" className="submit-textarea" placeholder=""></textarea>
+                    <textarea maxlength="500" id="spend_time" className="submit-textarea" placeholder=""></textarea>
                 </Col>
 
                 <Col xs={11} md={7}>
@@ -286,13 +289,12 @@ function Submit() {
                             name="SessionFalse"
                             id="SessionFalse"
                             value="True"
-                            checked={session === '참석 불가능'}
-                            onChange={() => setSession('참석 불가능')}
+                            checked={session === '참석불가능'}
+                            onChange={() => setSession('참석불가능')}
                             className="submit-radio"></input>
                         <label for="SessionFalse">참석불가능</label>
                     </div>
                 </Col>
-
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">12. 본인의 Github나 디자인 포트폴리오가 있다면 링크를 첨부해주세요.</p>
                     <div className="BreakLine"></div>
