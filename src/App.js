@@ -11,6 +11,8 @@ import Page3 from './components/Question/Page3';
 import Page4 from './components/Question/Page4';
 import Page5 from './components/Question/Page5';
 import Submit from './components/Submit/Submit';
+import Login from './components/Login/Login';
+import SignUp from './components/SignUp/SignUp';
 import SubmitComplete from './components/Submit/SubmitComplete';
 import Navbar from "./components/Navbar";
 import Footer from './components/Footer';
@@ -30,7 +32,8 @@ function App() {
           <Route path="/Question" element={<Question />} />
           <Route path="/Submit" element={<Submit />} />
           <Route path="/Submit/SubmitComplete" element={<SubmitComplete />} />
-          <Route path="/Login" element={<Notice />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Page1" element={<Page1 />} />
           <Route path="/Page2" element={<Page2 />} />
           <Route path="/Page3" element={<Page3 />} />
