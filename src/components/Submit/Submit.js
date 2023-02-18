@@ -216,8 +216,8 @@ function Submit() {
                             name="Frontend"
                             id="Frontend"
                             value="True"
-                            checked={part === 'Frontend'}
-                            onChange={() => setPart('Frontend')}
+                            checked={part === '프론트엔드'}
+                            onChange={() => setPart('프론트엔드')}
                             className="submit-radio"></input>
                         <label for="Frontend">프론트엔드</label>
                         <input
@@ -225,8 +225,8 @@ function Submit() {
                             name="Backend"
                             id="Backend"
                             value="True"
-                            checked={part === 'Backend'}
-                            onChange={() => setPart('Backend')}
+                            checked={part === '백엔드'}
+                            onChange={() => setPart('백엔드')}
                             className="submit-radio"></input>
                         <label for="Backend">백엔드</label>
                     </div>

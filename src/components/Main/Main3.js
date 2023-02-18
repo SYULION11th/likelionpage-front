@@ -7,6 +7,7 @@ function Main3() {
         <Col>
           <div className="timeline-box">
             <img className="timeline" alt="timeline" src="img/timeline.png"></img>
+            <img className="timeline-mobile" alt="timeline-mobile" src="img/timeline-mobile.png"></img>
           </div>
         </Col>
       </Row>

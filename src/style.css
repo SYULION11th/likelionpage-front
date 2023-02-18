@@ -427,6 +427,21 @@ body {
     margin: auto;
 }
 
+.timeline-mobile {
+    width: 50%;
+    margin: auto;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        display: none;
+    }
+    .timeline-mobile {
+        display: block;
+    }
+}
+
 @media (max-width: 767px) {
     .timeline-box {
         width: 220%;
