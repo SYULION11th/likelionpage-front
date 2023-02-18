@@ -23,7 +23,7 @@ function Question() {
             <div className="line1">
             </div> 
               <div className="textbox2">
-              무엇이든 물어보세요. 삼육대학교 멋사운영진들이 직접 답합니다.
+              무엇이든 물어보세요. 삼육대학교 멋사 운영진들이 직접 답합니다.
             </div> 
           </div>
         </Col>
