@@ -2,8 +2,13 @@ import React, {useState} from "react";
 import {Container, Row, Col} from "react-bootstrap";
 import axios from "axios";
 import {useNavigate} from 'react-router-dom';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 var isSubmit = false;
+
+function onChange(value) {
+    console.log('Captcha value:', value);
+}
 
 function TextInput(notebook, part, session) {
 
@@ -257,14 +262,12 @@ function Submit() {
                 <Col xs={11} md={7}>
                     <textarea id="spend_time" className="submit-textarea" placeholder=""></textarea>
                 </Col>
-               
 
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion-0">11-1. 멋쟁이사자처럼 정기세션은 매주 목요일 17시에 진행됩니다. 매주 참석 가능하신지
-참석 여부를 선택해주세요. (세션시간 약 2시간)
+                    <p className="SubmitQuestion-0">11-1. 멋쟁이사자처럼 정기세션은 매주 목요일 17시에 진행됩니다. 매주 참석 가능하신지 참석 여부를 선택해주세요. (세션시간 약 2시간)
                     </p>
                     <p className="SubmitQuestion-1">* 세션 진행 시간은 추후에 변경될 수 있습니다.
-</p>
+                    </p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
@@ -290,17 +293,27 @@ function Submit() {
                     </div>
                 </Col>
 
-
-
-
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">12. 본인의 Github나 디자인 포트폴리오가 있다면 링크를 첨부해주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <input id="portfolio" className="submit-textinput" placeholder="https://github.com/SYULION11th"></input>
+                    <input
+                        id="portfolio"
+                        className="submit-textinput"
+                        placeholder="https://github.com/SYULION11th"></input>
                 </Col>
+                <Col md={12}>
 
+                </Col>
+                <Col md={12}>
+                    <div className="ReCAPTCHA-box">
+                        <ReCAPTCHA
+                            className="ReCAPTCHA"
+                            sitekey="6LdbMJAkAAAAAHy5d9GDbslakgmfU8M-IUE-FrkU"
+                            onChange={onChange}/>
+                    </div>
+                </Col>
                 <Col md={12}>
                     <div className="CheckBoxContainer">
                         <input
