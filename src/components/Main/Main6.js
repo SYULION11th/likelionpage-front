@@ -13,7 +13,7 @@ function Main6() {
                 }}>
                 <Col md={12}>
                     <div className="article-title-box">
-                        <p className="Blue-Title-Article">멋쟁이사자처럼 삼육대학교와 함께 “가능성을 현실로”</p>
+                        <p className="Blue-Title-Article2">멋쟁이사자처럼 삼육대학교와 함께 “가능성을 현실로”</p>
                     </div>
                 </Col>
                 <Col md={12}>

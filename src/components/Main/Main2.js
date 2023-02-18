@@ -11,8 +11,8 @@ function Main2() {
                 }}>
                 <Col md={12}>
                     <div className="article-title-box">
-                        <p className="Blue-Title-Article">코딩 경험이 없어도 괜찮아요.</p>
-                        <p className="Blue-Title-Article">멋대에서 코딩을 배워 사자들과 함께 아이디어를 실현해보세요.</p>
+                        <p className="Blue-Title-Article1">코딩 경험이 없어도 괜찮아요.</p>
+                        <p className="Blue-Title-Article2">멋대에서 코딩을 배워 사자들과 함께 아이디어를 실현해보세요.</p>
                     </div>
                 </Col>
                 <Col md={3}>

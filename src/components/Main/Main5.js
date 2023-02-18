@@ -7,6 +7,7 @@ function Main5() {
         <Col>
           <div className="what-box">
             <img className="what" alt="what" src="img/session.png"></img>
+            <img className="session-mobile" alt="what" src="img/session-mobile.png"></img>
           </div>
         </Col>
       </Row>

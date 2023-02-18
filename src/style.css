@@ -386,7 +386,16 @@ body {
     margin-bottom: 30px;
 }
 
-.Blue-Title-Article {
+.Blue-Title-Article1 {
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 1%;
+    float: center;
+    text-align: center;
+}
+
+.Blue-Title-Article2 {
     color: white;
     font-size: 35px;
     font-weight: 500;
@@ -397,9 +406,14 @@ body {
 .Blue-Article {
     margin: auto;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     float: center;
     text-align: center;
+}
+@media (max-width: 1200px) {
+    .Blue-Article {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -554,11 +568,22 @@ body {
     float: left;
     margin: auto;
 }
+.session-mobile {
+    width: 50%;
+    margin: auto;
+    display: none;
+}
 
 @media (max-width: 767px) {
     .what-box {
-        width: 290%;
-        margin-left: -135%;
+        width: 220%;
+        margin-left: -60%;
+    }
+    .what {
+        display: none;
+    }
+    .session-mobile {
+        display: block;
     }
 }
 
@@ -887,7 +912,7 @@ body {
 
 .SubmitCompleteBox {
     left: 50%;
-    top: 50%;
+    top: 65%;
     transform: translate(-50%, -50%);
     position: absolute;
 

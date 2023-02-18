@@ -1,16 +1,14 @@
-import {React, useState} from "react";
+import {React, useEffect, useState} from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Container from "react-bootstrap/Container";
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import logo from '../Assets/logo.png';
 
-
-
 function NavBar() {
-
     const [expand, updateExpanded] = useState(false);
     const [navColour, updateNavbar] = useState(false);
+    const [islogedin, updateLogedin] = useState('');
 
     function scrollHandler() {
         if (window.scrollY >= 20) {
@@ -21,6 +19,15 @@ function NavBar() {
     }
 
     window.addEventListener("scroll", scrollHandler);
+
+    useEffect(() => {
+
+        if (sessionStorage.getItem("logedin") !== null) {
+            updateLogedin('false');
+        } else {
+            updateLogedin('true');
+        }
+    }, [expand]);
 
     return (
         <Navbar
@@ -33,9 +40,9 @@ function NavBar() {
                 : "navbar"}>
             <Container>
 
-            <Navbar.Brand href="/likelionpage-front/" className="d-flex">
-                    <img src={logo} className="img-fluid navLogo" alt="brand" />
-                    </Navbar.Brand>
+                <Navbar.Brand href="/likelionpage-front/" className="d-flex">
+                    <img src={logo} className="img-fluid navLogo" alt="brand"/>
+                </Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="responsive-navbar-nav"
                     onClick={() => {
@@ -51,8 +58,6 @@ function NavBar() {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto" defaultActiveKey="#home">
-                        
-
 
                         <Nav.Item>
                             <Nav.Link as={Link} to="/Question" onClick={() => updateExpanded(false)}>
@@ -68,12 +73,24 @@ function NavBar() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item>
-                            <Nav.Link as={Link} to="/Login" onClick={() => updateExpanded(false)}>
+                        {
+                            islogedin === 'true' && <Nav.Item>
 
-                                로그인
-                            </Nav.Link>
-                        </Nav.Item>
+                                    <Nav.Link as={Link} to="/Login" onClick={() => updateExpanded(false)}>
+                                        로그인
+                                    </Nav.Link>
+                                </Nav.Item>
+
+                        }
+                        {
+                            islogedin === 'false' && <Nav.Item>
+
+                                    <Nav.Link as={Link} to="/Logout" onClick={() => updateExpanded(false)}>
+                                        로그아웃
+                                    </Nav.Link>
+                                </Nav.Item>
+
+                        }
 
                     </Nav>
                 </Navbar.Collapse>

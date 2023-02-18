@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Main from './components/Main/Main';
-import Notice from './components/Notice/Notice';
 import Question from './components/Question/Question';
-import Question2 from './components/Question/Question2';
-import QuestionWrite from './components/Question/Write';
 import Page1 from './components/Question/Page1';
 import Page2 from './components/Question/Page2';
 import Page3 from './components/Question/Page3';
@@ -12,6 +9,7 @@ import Page4 from './components/Question/Page4';
 import Page5 from './components/Question/Page5';
 import Submit from './components/Submit/Submit';
 import Login from './components/Login/Login';
+import Logout from './components/Login/Logout';
 import SignUp from './components/SignUp/SignUp';
 import SubmitComplete from './components/Submit/SubmitComplete';
 import Navbar from "./components/Navbar";
@@ -33,6 +31,7 @@ function App() {
           <Route path="/Submit" element={<Submit />} />
           <Route path="/Submit/SubmitComplete" element={<SubmitComplete />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Logout" element={<Logout />} />
           <Route path="/SignUp" element={<SignUp />} />
           <Route path="/Page1" element={<Page1 />} />
           <Route path="/Page2" element={<Page2 />} />

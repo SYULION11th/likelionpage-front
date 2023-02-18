@@ -21,6 +21,10 @@ function Main() {
         window.addEventListener("scroll", updateScroll);
     }, []);
 
+
+
+
+
     return (
         <Container fluid="fluid" className="p-0">
             <Row style={{
@@ -59,7 +63,6 @@ function Main() {
                 </Col>
                 <Col
                     md={12}
-                    
                     style={{
                         backgroundImage: "url(img/study-background.png)",
                         backgroundRepeat: "no-repeat",
@@ -68,27 +71,21 @@ function Main() {
                     }}>
                     <Main2/>
                 </Col>
-                <Col
-                    md={12}
-                    >
+                <Col md={12}>
                     <Main3/>
                 </Col>
                 <Col
                     md={12}
-                    
                     style={{
                         backgroundColor: "#015CCC"
                     }}>
                     <Main4/>
                 </Col>
-                <Col
-                    md={12}
-                    >
+                <Col md={12}>
                     <Main5/>
                 </Col>
                 <Col
                     md={12}
-                    
                     style={{
                         backgroundImage: "url(img/lion-background.png)",
                         backgroundRepeat: "no-repeat",

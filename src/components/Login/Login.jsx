@@ -31,6 +31,7 @@ export default function Login() {
                 console.log(response);
                 alert(`로그인 완료되었습니다.`);
                 isSubmit = true;
+                sessionStorage.setItem('logedin', 'true');
             })
             .catch(function (error) {
                 console.log(error);
