@@ -3,6 +3,8 @@ import './Question.css'
 import './Write.js'
 import './Media.css';
 import './Media2.css';
+import './Media3.css';
+import './Media4.css';
 import { Link } from "react-router-dom";
 
 const url = "https://pf.kakao.com/_DfxbkK"
@@ -15,7 +17,7 @@ function Question() {
   return (
     <Container fluid="fluid" className="p-0">
       <Row style={{ justifyContent: 'center' }}>
-        <Col md={12} style={{ padding: '0px' }}>
+        {/* <Col md={12} style={{ padding: '0px' }}> */}
           <div className="titleWrap">
             <div className="textbox1">
               멋쟁이사자처럼 삼육대학교 Q&A
@@ -26,7 +28,7 @@ function Question() {
               무엇이든 물어보세요. 삼육대학교 멋사 운영진들이 직접 답합니다.
             </div> 
           </div>
-        </Col>
+        {/* </Col> */}
 
         <Col md={10}>
         <div className="board_list_wrap">

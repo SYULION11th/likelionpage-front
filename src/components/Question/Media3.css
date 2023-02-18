@@ -1,4 +1,4 @@
-@media (max-width: 1024px) {
+@media (max-width: 360px) {
     .board_wrap {
         width: 100%;
         min-width: 320px;
@@ -6,11 +6,43 @@
         box-sizing: border-box;
     }
 
+    .titleWrap{
+        height:200px;
+    }
+
+    .textbox1{
+        padding: 0;
+        font-size: 1.8rem;
+    }
+
+    .textbox2{
+        font-size: 1.1rem;
+        padding-top: 10px;
+    }
+
+    .line1{
+        font-size: 1.4rem;
+    }
+
+    .board_page{
+        padding-top: 150px;
+    }
+
+    .qnatext{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+ 
+
     .board_list{
         margin: 0;
         font-size: 0;
         height: 400px;
     }
+
 
     .board_list .num,
     .board_list .writer {
@@ -27,10 +59,16 @@
 
     .board_list .title {
         text-indent: 10px;
+        font-size: 1rem;
     }
 
     .board_list .top .title {
         text-indent: 0;
+        font-size: 1rem;
+    }
+
+    .board_page {
+        padding: 10px;
     }
 
     .board_page a {
@@ -72,13 +110,8 @@
         margin-right: 2%;
     }
 
-    .textbox1 {
-        font-size: 2.1rem;
-    }
-
     .textbox2{
-        margin: 0;
-        padding-top: 30px;
+     margin: 0;
     }
     
     .board_list .title,
@@ -94,9 +127,11 @@
 
     .board_page .QButton{
       margin-left: 20%;
+      font-size: medium;
     }
 
     .board_page{
+        margin:0;
         padding-top: 20px;
         padding-bottom: 20px;
     }

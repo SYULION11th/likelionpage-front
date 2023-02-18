@@ -54,7 +54,7 @@ return(
                     </dl>
                 </div>
                 <div className="cont">
-                날짜 : 3월 12일<br></br>
+                날짜 : 3월 11일<br></br>
                 시간 : 오후 3시 (예정)<br></br>
                 통보방식 : 개별연락(메일,문자)
                 <p></p>
