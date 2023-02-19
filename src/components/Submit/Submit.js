@@ -8,9 +8,6 @@ var isSubmit = false;
 var Captcha = false;
 var is_checked = false;
 
-
-
-
 function TextInput(notebook, part, session) {
 
     var getName = document
@@ -101,18 +98,15 @@ function Submit() {
     const [part, setPart] = useState('');
     const [session, setSession] = useState('');
 
-
     function onChange(value) {
         if (value === null) {
             Captcha = false;
-        }
-        else {
+        } else {
             Captcha = true;
         }
-        if (is_checked && Captcha){
+        if (is_checked && Captcha) {
             setDisable(false);
-        }
-        else {
+        } else {
             setDisable(true);
         }
     }
@@ -123,10 +117,9 @@ function Submit() {
         // 2. checked 속성을 체크합니다.
         is_checked = checkbox.checked;
 
-        if (is_checked && Captcha){
+        if (is_checked && Captcha) {
             setDisable(false);
-        }
-        else {
+        } else {
             setDisable(true);
         }
     }
@@ -148,6 +141,13 @@ function Submit() {
                         <p className="SubmitSubTitle">
                             POSSIBILITY TO REALITY. 멋사와 함께 가능성을 현실로.
                         </p>
+
+                        <p className="SubmitSubTitle">
+                            제출한 지원서는 다시 열람이 불가능합니다.
+                        </p>
+                        <p className="SubmitSubTitle">
+                            최초로 제출한 서류를 기준으로 서류 평가를 진행할 예정이니 신중히 한번만 제출 부탁드립니다.
+                        </p>
                     </div>
                 </Col>
                 <Col xs={11} md={7}>
@@ -155,21 +155,29 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <input id="name" className="submit-textinput" placeholder="지원자 본인의 이름을 입력해주세요."></input>
+                    <input
+                        id="name"
+                        className="submit-textinput"
+                        placeholder="지원자 본인의 이름을 입력해주세요."
+                        maxLength="10"></input>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">2. 지원자의 학번을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <input id="studentid" className="submit-textinput" placeholder="ex) 2021134567"></input>
+                    <input
+                        id="studentid"
+                        className="submit-textinput"
+                        placeholder="ex) 2021134567"
+                        maxLength="10"></input>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">3. 지원자의 학년을 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <input id="grade" className="submit-textinput" placeholder="1학년"></input>
+                    <input id="grade" className="submit-textinput" placeholder="1학년" maxLength="10"></input>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">4. 지원자의 소속 학과를 입력해 주세요.</p>
@@ -179,14 +187,19 @@ function Submit() {
                     <input
                         id="Department"
                         className="submit-textinput"
-                        placeholder="지원자 본인의 소속학과를 입력해주세요. (부/복수전공시 주전공과 구분하여 적어주세요.)"></input>
+                        placeholder="지원자 본인의 소속학과를 입력해주세요. (부/복수전공시 주전공과 구분하여 적어주세요.)"
+                        maxLength="40"></input>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">5. 지원자의 핸드폰 번호를 입력해 주세요.</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <input id="phone" className="submit-textinput" placeholder="ex) 010-1134-5677"></input>
+                    <input
+                        id="phone"
+                        className="submit-textinput"
+                        placeholder="ex) 010-1134-5677"
+                        maxLength="15"></input>
                 </Col>
 
                 <Col xs={11} md={7}>
@@ -227,8 +240,11 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea maxLength="500" id="content" className="submit-textarea" placeholder="">
-                    </textarea>
+                    <textarea
+                        maxLength="500"
+                        id="content"
+                        className="submit-textarea"
+                        placeholder=""></textarea>
 
                 </Col>
 
@@ -285,7 +301,11 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea maxLength="500" id="cooperation" className="submit-textarea" placeholder=""></textarea>
+                    <textarea
+                        maxLength="500"
+                        id="cooperation"
+                        className="submit-textarea"
+                        placeholder=""></textarea>
                 </Col>
                 <Col xs={11} md={7}>
                     <p className="SubmitQuestion">11. 멋쟁이사자처럼 대학은 최소 주 2회 모임 & 10시간 이상의 시간 투자를
@@ -293,7 +313,11 @@ function Submit() {
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <textarea maxLength="500" id="spend_time" className="submit-textarea" placeholder=""></textarea>
+                    <textarea
+                        maxLength="500"
+                        id="spend_time"
+                        className="submit-textarea"
+                        placeholder=""></textarea>
                 </Col>
 
                 <Col xs={11} md={7}>
@@ -326,18 +350,18 @@ function Submit() {
                     </div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">12. 본인의 Github나 디자인 포트폴리오가 있다면 링크를 첨부해주세요.</p>
+                    <p className="SubmitQuestion-0">12. 본인의 Github나 디자인 포트폴리오가 있다면 링크를 첨부해주세요.</p>
+                    <p className="SubmitQuestion-1">공란으로 제출하여도 평가에 지장이 가지 않습니다.</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
                     <input
                         id="portfolio"
                         className="submit-textinput"
-                        placeholder="https://github.com/SYULION11th"></input>
+                        placeholder="https://github.com/SYULION11th"
+                        maxLength="100"></input>
                 </Col>
-                <Col md={12}>
-
-                </Col>
+                <Col md={12}></Col>
                 <Col md={12}>
                     <div className="ReCAPTCHA-box">
                         <ReCAPTCHA
