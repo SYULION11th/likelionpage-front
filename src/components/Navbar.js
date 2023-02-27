@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from "react";
+import {React, useState} from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Container from "react-bootstrap/Container";
 import Nav from 'react-bootstrap/Nav';
@@ -8,7 +8,6 @@ import logo from '../Assets/logo.png';
 function NavBar() {
     const [expand, updateExpanded] = useState(false);
     const [navColour, updateNavbar] = useState(false);
-    const [islogedin, updateLogedin] = useState('');
 
     function scrollHandler() {
         if (window.scrollY >= 20) {
@@ -20,14 +19,6 @@ function NavBar() {
 
     window.addEventListener("scroll", scrollHandler);
 
-    useEffect(() => {
-
-        if (sessionStorage.getItem("logedin") !== null) {
-            updateLogedin('false');
-        } else {
-            updateLogedin('true');
-        }
-    }, [expand]);
 
     return (
         <Navbar
@@ -72,25 +63,6 @@ function NavBar() {
                                 지원하기
                             </Nav.Link>
                         </Nav.Item>
-
-                        {
-                            islogedin === 'true' && <Nav.Item>
-
-                                    <Nav.Link as={Link} to="/Login" onClick={() => updateExpanded(false)}>
-                                        로그인
-                                    </Nav.Link>
-                                </Nav.Item>
-
-                        }
-                        {
-                            islogedin === 'false' && <Nav.Item>
-
-                                    <Nav.Link as={Link} to="/Logout" onClick={() => updateExpanded(false)}>
-                                        로그아웃
-                                    </Nav.Link>
-                                </Nav.Item>
-
-                        }
 
                     </Nav>
                 </Navbar.Collapse>
