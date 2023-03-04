@@ -236,7 +236,7 @@ function Submit() {
                     </div>
                 </Col>
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">8. 다양한 IT동아리 중에서 멋쟁이사자처럼 대학 10기를 선택하고 지원하시게 된 이유를 작성해주세요. (500자 이내)</p>
+                    <p className="SubmitQuestion">8. 다양한 IT동아리 중에서 멋쟁이사자처럼 대학 11기를 선택하고 지원하시게 된 이유를 작성해주세요. (500자 이내)</p>
                     <div className="BreakLine"></div>
                 </Col>
                 <Col xs={11} md={7}>
@@ -249,7 +249,7 @@ function Submit() {
                 </Col>
 
                 <Col xs={11} md={7}>
-                    <p className="SubmitQuestion">9. 멋쟁이사자처럼 대학 10기부터 기초 개발 스터디는 동일하게 진행되지만 이후에
+                    <p className="SubmitQuestion">9. 멋쟁이사자처럼 대학 11기부터 기초 개발 스터디는 동일하게 진행되지만 이후에
                         기획/디자인 파트와 개발 파트 중 선택하여 진행하게 됩니다. 어느 파트에 지원하시나요?
                     </p>
                     <div className="BreakLine"></div>
