@@ -44,40 +44,49 @@ function TextInput(notebook, part, session) {
         .getElementById("portfolio")
         .value;
 
-    axios
-        .post(
-            "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
-                    "o/",
+    // 한국 날짜로 3월 9일 자정부터 서류지원 마감
 
-            {
-                name: getName,
-                Department: Department,
-                studentid: studentid,
-                grade: grade,
-                phone: phone,
-                email: email,
-                content: content,
-                track: track,
-                cooperation: cooperation,
-                spend_time: spend_time,
-                notebook: notebook,
-                github: portfolio,
-                my_track: part,
-                session: session
-            }
-        )
-        .then(function (response) {
-            console.log(response);
-            alert(`제출이 완료되었습니다`);
-            isSubmit = true;
+    var now = new Date();
+    var day = now.getDate();
+    
+    if (day === 10 || day === 11 || day === 12 || day === 13 || day === 14 || day === 15 || day === 16 || day === 17 || day === 18 || day === 19 || day === 20 || day === 21 || day === 22 || day === 23 || day === 24 || day === 25 || day === 26 || day === 27 || day === 28 || day === 29 || day === 30 || day === 31) {
+        alert('모집이 마감되었습니다. \n(서류 지원 기간 : 2/20 ~ 3/9)');
+        return;
+    } else {
+        axios
+            .post(
+                "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
+                        "o/",
 
-        })
-        .catch(function (error) {
-            console.log(error);
-            alert(`입력 값을 다시 확인해주세요`);
-            isSubmit = false;
-        });
+                {
+                    name: getName,
+                    Department: Department,
+                    studentid: studentid,
+                    grade: grade,
+                    phone: phone,
+                    email: email,
+                    content: content,
+                    track: track,
+                    cooperation: cooperation,
+                    spend_time: spend_time,
+                    notebook: notebook,
+                    github: portfolio,
+                    my_track: part,
+                    session: session
+                }
+            )
+            .then(function (response) {
+                console.log(response);
+                alert(`제출이 완료되었습니다`);
+                isSubmit = true;
 
+            })
+            .catch(function (error) {
+                console.log(error);
+                alert(`입력 값을 다시 확인해주세요`);
+                isSubmit = false;
+            });
+    }
 }
 
 function GoComplete(navigate) {
