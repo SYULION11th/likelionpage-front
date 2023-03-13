@@ -46,47 +46,100 @@ function TextInput(notebook, part, session) {
 
     // 한국 날짜로 3월 9일 자정부터 서류지원 마감
 
-    var now = new Date();
-    var day = now.getDate();
+    const url = 'https://worldtimeapi.org/api/timezone/Asia/Seoul';
+    axios.get(url)
+        .then(function (response) {
+            console.log(response.data);
+            var now = new Date(response.data.datetime);
+            var day = now.getDate();
+            var hour = now.getHours();
+
+            if (day === 13 || (day === 15 && ( hour === 17 || hour === 18 || hour === 19 || hour === 20 || hour === 21 || hour === 22 || hour === 23 || hour ===24 )) || day === 16 || day === 17 || day === 18 || day === 19 || day === 20 || day === 21 || day === 22 || day === 23 || day === 24 || day === 25 || day === 26 || day === 27 || day === 28 || day === 29 || day === 30 || day === 31) {
+                alert('모집이 마감되었습니다. \n(서류 지원 기간 : 2/20 ~ 3/9 && 3/14 ~ 3/15 17:00)');
+                return;
+            } else {
+                axios
+                    .post(
+                        "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
+                                "o/",
+                        {
+                            name: getName,
+                            Department: Department,
+                            studentid: studentid,
+                            grade: grade,
+                            phone: phone,
+                            email: email,
+                            content: content,
+                            track: track,
+                            cooperation: cooperation,
+                            spend_time: spend_time,
+                            notebook: notebook,
+                            github: portfolio,
+                            my_track: part,
+                            session: session
+                        }
+                    )
+                    .then(function (response) {
+                        console.log(response);
+                        alert(`제출이 완료되었습니다`);
+                        isSubmit = true;
+
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                        alert(`입력 값을 다시 확인해주세요`);
+                        isSubmit = false;
+                    });
+            }
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+
+
+
+    // var now = new Date();
+    // var day = now.getDate();
+    // var hour = now.getHours();
     
-    if (day === 10 || day === 11 || day === 12 || day === 13 || day === 14 || day === 15 || day === 16 || day === 17 || day === 18 || day === 19 || day === 20 || day === 21 || day === 22 || day === 23 || day === 24 || day === 25 || day === 26 || day === 27 || day === 28 || day === 29 || day === 30 || day === 31) {
-        alert('모집이 마감되었습니다. \n(서류 지원 기간 : 2/20 ~ 3/9)');
-        return;
-    } else {
-        axios
-            .post(
-                "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
-                        "o/",
+    // if (day === 13 || (day === 15 && ( hour === 17 || hour === 18 || hour === 19 || hour === 20 || hour === 21 || hour === 22 || hour === 23 || hour ===24 )) || day === 16 || day === 17 || day === 18 || day === 19 || day === 20 || day === 21 || day === 22 || day === 23 || day === 24 || day === 25 || day === 26 || day === 27 || day === 28 || day === 29 || day === 30 || day === 31) {
+    //     alert('모집이 마감되었습니다. \n(서류 지원 기간 : 2/20 ~ 3/9 && 3/14 ~ 3/15 17:00)');
+    //     return;
+    // } else {
+    //     axios
+    //         .post(
+    //             "https://port-0-likelionpage-back-1jx7m2gldjq856s.gksl2.cloudtype.app/api/jungb" +
+    //                     "o/",
 
-                {
-                    name: getName,
-                    Department: Department,
-                    studentid: studentid,
-                    grade: grade,
-                    phone: phone,
-                    email: email,
-                    content: content,
-                    track: track,
-                    cooperation: cooperation,
-                    spend_time: spend_time,
-                    notebook: notebook,
-                    github: portfolio,
-                    my_track: part,
-                    session: session
-                }
-            )
-            .then(function (response) {
-                console.log(response);
-                alert(`제출이 완료되었습니다`);
-                isSubmit = true;
+    //             {
+    //                 name: getName,
+    //                 Department: Department,
+    //                 studentid: studentid,
+    //                 grade: grade,
+    //                 phone: phone,
+    //                 email: email,
+    //                 content: content,
+    //                 track: track,
+    //                 cooperation: cooperation,
+    //                 spend_time: spend_time,
+    //                 notebook: notebook,
+    //                 github: portfolio,
+    //                 my_track: part,
+    //                 session: session
+    //             }
+    //         )
+    //         .then(function (response) {
+    //             console.log(response);
+    //             alert(`제출이 완료되었습니다`);
+    //             isSubmit = true;
 
-            })
-            .catch(function (error) {
-                console.log(error);
-                alert(`입력 값을 다시 확인해주세요`);
-                isSubmit = false;
-            });
-    }
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error);
+    //             alert(`입력 값을 다시 확인해주세요`);
+    //             isSubmit = false;
+    //         });
+    // }
 }
 
 function GoComplete(navigate) {
